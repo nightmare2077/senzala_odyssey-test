@@ -1,7 +1,6 @@
 body {
-    height: auto;
-    background: url(https://phonoteka.org/uploads/posts/2022-02/1643931089_6-phonoteka-org-p-oboi-na-rabochii-stol-serii-fon-6.jpg);
-    background-repeat: no-repeat;
+    height: 100vh;
+    background: var(--bg);
     background-size: cover;
 	background-position: center center;
 	background-attachment: fixed;
@@ -101,56 +100,65 @@ nav ul li:hover > ul { display: block; }
     text-shadow: -1px -1px 0 rgb(240, 183, 27), 1px -1px 0 rgb(240, 183, 27), -1px 1px 0 rgb(240, 183, 27), 1px 1px 0 rgb(240, 183, 27);
     text-transform: uppercase;
 }
-
-.media {
+.home_2 {
+    height: 25vh;
     display: flex;
-    margin-right: 3rem;
-    margin-left: 3rem;
-}
-.box {
-    display: grid;
     align-items: center;
-    margin-right: 3rem;
+    margin-top: 40px;
+    background: url(https://phonoteka.org/uploads/posts/2022-02/1643931089_6-phonoteka-org-p-oboi-na-rabochii-stol-serii-fon-6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+    text-align: center;
+    justify-content: center;
+    margin-top: 8rem;
+}
+.basic .photo {
+    display: flex;  
+    align-items: center;
+    flex-wrap: wrap;
+    background: var(--black);
+    margin-left: 2rem;
+    margin-right: 2rem;
+    justify-content: space-between;
+}
+.basic .row {
+    display: flex;  
+    align-items: center;
+    flex-wrap: wrap;
+    background: var(--black);
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.basic .row .content {
+    width: 38rem;
+    text-align: left;
+    height: auto;
+    color: #fff;
+    top: 0;
+    background: var(--black);
     margin-left: 3rem;
-    margin-bottom: 3rem;
-}
-.box h3 {
-    color: #cfae81;
-    font-size: 3rem;
-    font-weight: 400;
-    text-align: center;
-}
-.content {
-    background: #cfae81;
-    height: 8rem;
-}
-.content h3 {
-    color: var(--bg);
-    font-size: 3rem;
-    text-align: center;
-}
-.box img {
-    width: 20rem;
-    height: 25rem;
 }
 
-.box .btn {
-    background-color: darkred;
-    display: block;
-    width: auto;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    color: #eee;
-    font-size: 1.7rem;
-    text-decoration: none;
-    text-align: center;
-    transition: color 0.3s linear;
-    margin-top: 0.6rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
+.basic .row .content h3 {
+    font-size: 2.7rem;
+    color: #cfae81;
+    font-weight: 500;
 }
-.box .btn:hover {
-color: goldenrod;
-background-color: rgb(71, 1, 1);
+.basic .row .content p {
+    font-size: 1.2rem;
+    color: #ccc;
+    padding: 1rem;
+    line-height: 1.8;
+    font-weight: 200;
+    margin-bottom: 2rem;
+}
+
+.basic .row .media {
+    display: table-column;
+    margin-left: 70px;
+    margin-bottom: 10rem;
 }
 
 .footer {
@@ -191,47 +199,4 @@ background-color: rgb(71, 1, 1);
 }
 .footer .credit span {
     color: #cfae81;
-}
-
-.logo img {
-    height: 100px; 
-    width: auto; 
-    margin-left: 30px;
-}
-
-.menu-btn {
-    display: none;
-}
-
-@media (max-width:991px){
-    .home {
-        background-position: left;
-        justify-content: center;
-        text-align: center;
-    }
-
-    html {
-        font-size: 85%;
-    }
-    header {
-        padding: 1.5rem 2rem;
-    }
-}
-@media (max-width:1176px) {
-    .home {
-        background-position: left;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .menu-btn {
-        display: inline-block;
-    }
-    .menu-btn ul li {
-        font-size: 3rem;
-    }
-    header nav ul li {
-        display: none;
-    }
-
 }

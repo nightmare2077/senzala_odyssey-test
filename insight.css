@@ -1,9 +1,9 @@
 body {
     height: auto;
-    background: url(https://phonoteka.org/uploads/posts/2022-02/1643931089_6-phonoteka-org-p-oboi-na-rabochii-stol-serii-fon-6.jpg);
+    background: var(--bg);
     background-repeat: no-repeat;
     background-size: cover;
-	background-position: center center;
+	background-position: left;
 	background-attachment: fixed;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -52,7 +52,9 @@ header {
     border-bottom: var(--border);
     z-index: 1000;
 }
-
+header nav {
+    margin-right: 3rem;
+}
 header nav ul li {
     position: relative;
     float: left;
@@ -88,6 +90,20 @@ nav ul li ul li:hover {
 }
 nav ul li:hover > ul { display: block; }
 
+.logo img {
+    height: 100px; 
+    width: auto; 
+    margin-left: 30px;
+}
+
+.menu-btn {
+    display: none;
+}
+.menu-btn img {
+    height: 45px; 
+    width: auto;
+}
+
 .heading {
     text-align: center;
     color: #fff;
@@ -101,58 +117,62 @@ nav ul li:hover > ul { display: block; }
     text-shadow: -1px -1px 0 rgb(240, 183, 27), 1px -1px 0 rgb(240, 183, 27), -1px 1px 0 rgb(240, 183, 27), 1px 1px 0 rgb(240, 183, 27);
     text-transform: uppercase;
 }
-
-.media {
-    display: flex;
-    margin-right: 3rem;
-    margin-left: 3rem;
-}
-.box {
-    display: grid;
-    align-items: center;
-    margin-right: 3rem;
-    margin-left: 3rem;
-    margin-bottom: 3rem;
-}
-.box h3 {
-    color: #cfae81;
-    font-size: 3rem;
-    font-weight: 400;
-    text-align: center;
-}
-.content {
-    background: #cfae81;
-    height: 8rem;
-}
-.content h3 {
-    color: var(--bg);
-    font-size: 3rem;
-    text-align: center;
-}
-.box img {
-    width: 20rem;
-    height: 25rem;
+.heading {
+    color: var(--main-color);
+    text-shadow: -1px -1px 0 rgb(240, 183, 27), 1px -1px 0 rgb(240, 183, 27), -1px 1px 0 rgb(240, 183, 27), 1px 1px 0 rgb(240, 183, 27);
+    text-transform: uppercase;
 }
 
-.box .btn {
-    background-color: darkred;
-    display: block;
+.container {
+    max-width: 93%;
+    margin: 20px auto;
+}
+.container .image-container {
+    columns:3 250px;
+    gap: 15px;
+}
+.container .image-container .image {
+    cursor: pointer;
+}
+.container .image-container img {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+}
+.container .image-container image:hover {
+    box-shadow: -1px -1px 0 rgb(240, 183, 27), 1px -1px 0 rgb(240, 183, 27), -1px 1px 0 rgb(240, 183, 27), 1px 1px 0 rgb(240, 183, 27);
+}
+.container .popup-image {
+    position: fixed;
+    top: 4rem;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+.container .popup-image span {
+    position: absolute;
+    top: 5rem;
+    right: 80px;
+    font-size: 50px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+}
+.container .popup-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid var(--black);
+    border-radius: 5px;
+    height: 70%;
     width: auto;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    color: #eee;
-    font-size: 1.7rem;
-    text-decoration: none;
-    text-align: center;
-    transition: color 0.3s linear;
-    margin-top: 0.6rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    object-fit: cover;
 }
-.box .btn:hover {
-color: goldenrod;
-background-color: rgb(71, 1, 1);
-}
-
 .footer {
     background: var(--bg);
     text-align: center;
@@ -161,12 +181,14 @@ background-color: rgb(71, 1, 1);
     margin-right: 2rem;
 }
 .footer .share a {
-    height: 5rem;
-    width: 5rem;
     line-height: 5rem;
     font-size: 2rem;
     color: #fff;
     margin: 0.3rem;
+}
+.footer .share a img {
+    height: 35px;
+    width: auto;
 }
 .footer .links {
     margin-bottom: 1.5rem;
@@ -192,17 +214,6 @@ background-color: rgb(71, 1, 1);
 .footer .credit span {
     color: #cfae81;
 }
-
-.logo img {
-    height: 100px; 
-    width: auto; 
-    margin-left: 30px;
-}
-
-.menu-btn {
-    display: none;
-}
-
 @media (max-width:991px){
     .home {
         background-position: left;
@@ -233,5 +244,9 @@ background-color: rgb(71, 1, 1);
     header nav ul li {
         display: none;
     }
-
+}
+@media (max-width:768px) {
+    .container .popup-image img {
+        width: 95%;
+    }
 }

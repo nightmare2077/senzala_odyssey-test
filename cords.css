@@ -1,0 +1,694 @@
+body {
+    height: auto;
+    background: var(--bg);
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10rem;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --main-color: darkred;
+    --black: rgb(53, 52, 52);
+    --bg: #272727;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+}
+
+html {
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+    width: 0.8rem;
+}
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 5rem;
+}
+
+header {
+    position: fixed;
+    justify-content: space-between;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    padding: 10px;
+    background: var(--bg);
+    border-bottom: var(--border);
+    z-index: 1000;
+}
+
+header nav ul li {
+    position: relative;
+    float: left;
+}
+header nav ul li a {
+    padding: 15px;
+    color: white;
+    font-weight: 200;
+    font-size: 1.3rem;
+    margin-left: 45px;
+    transition: color 0.3s linear;
+    border-bottom: 0.1rem solid var(--main-color);
+}
+header nav ul li a:hover {
+    color: goldenrod;
+}
+nav ul li ul {
+    position: absolute;
+    left: 40px;
+    width: 180px;
+    color: white;
+    background-color: darkred;
+    display: none;
+}
+nav ul li ul li {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: block;
+}
+nav ul li ul li:hover {
+    background-color: rgb(49, 3, 3);
+    color: darkred;
+}
+nav ul li:hover > ul { display: block; }
+
+.heading {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+    margin-top: 10rem;
+}
+.heading span {
+    color: var(--main-color);
+    text-shadow: -1px -1px 0 rgb(240, 183, 27), 1px -1px 0 rgb(240, 183, 27), -1px 1px 0 rgb(240, 183, 27), 1px 1px 0 rgb(240, 183, 27);
+    text-transform: uppercase;
+}
+
+.footer {
+    background: var(--bg);
+    text-align: center;
+    width: 110%;
+    display: none;
+}
+.footer .share a{
+    margin-right: 2rem;
+}
+.footer .share a {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    margin: 0.3rem;
+}
+.footer .links {
+    margin-bottom: 1.5rem;
+}
+.footer .links a {
+    margin-right: 0.5rem;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    border: var(--border);
+    padding: 0.5rem 1rem;
+    transition: color 0.3s linear;
+}
+.footer .links a:hover {
+    color: goldenrod;
+    background-color: rgb(71, 1, 1);
+}
+.footer .credit {
+    font-size: 1rem;
+    color: #fff;
+}
+.footer .credit span {
+    color: #cfae81;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 23rem;
+    position: static;
+}
+.imgContainer {
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+.slide_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.4rem;
+}
+.imgContainer .img {
+    position: relative;
+    height:370px;
+    width: 240px;
+    filter: saturate(10%);
+    transition: 0.7s;
+    border-radius: 20px;
+    display: flex;
+}
+.cordas {
+    width: 50%;
+    height: 370px;
+    border-radius: 20px;
+}
+.img p {
+    margin-left: 0.5rem;
+    color: #ccc;
+    font-size: 0.5rem;
+    width: 80%;
+    max-height: 370px;
+    margin-top: 1rem;
+}
+.img .hidden h3 {
+    color: #cfae81;
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+}
+.button {
+    position: absolute;
+    height:370px;
+    width: 240px;
+    transition: 0.7s;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+}
+.button:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#slider1:target ~ .imgContainer #img1{
+    width: 600px;
+    height: 380px;
+    background: transparent;
+    filter: saturate(100%);
+}
+#slider1:target ~ .imgContainer #button1 {
+    width: 600px;
+    height: 380px;
+    background: transparent;
+    filter: saturate(100%);
+}
+
+#slider1:target ~ .imgContainer #img1 p {
+    display: block;
+    font-size: 1.1rem;
+    transition: all 0.7s ease;
+}
+#slider1:target ~ .imgContainer #button1 p {
+    display: block;
+    font-size: 1.1rem;
+    transition: all 0.7s ease;
+}
+#slider1:target ~ .imgContainer #img1 .cordas {
+    width: 25%;
+}
+#slider1:target ~ .imgContainer #button1 .cordas {
+    width: 25%;
+}
+
+#slider2:target ~ .imgContainer #img2{
+    width: 600px;
+    height: 380px;
+    background: transparent;
+    filter: saturate(100%);
+}
+#slider2:target ~ .imgContainer #button2 {
+    width: 600px;
+    height: 380px;
+    background: transparent;
+    filter: saturate(100%);
+}
+
+#slider2:target ~ .imgContainer #img2 p {
+    display: block;
+    font-size: 1.1rem;
+    transition: all 0.7s ease;
+}
+#slider2:target ~ .imgContainer #button2 p {
+    display: block;
+    font-size: 1.1rem;
+    transition: all 0.7s ease;
+}
+#slider2:target ~ .imgContainer #img2 .cordas {
+    width: 25%;
+}
+#slider2:target ~ .imgContainer #button2 .cordas {
+    width: 25%;
+    transition: all 0.7s ease;
+}
+
+#slider3:target ~ .imgContainer #img3{
+    width: 600px;
+    height: 380px;
+    background: transparent;
+    filter: saturate(100%);
+}
+#slider3:target ~ .imgContainer #button3 {
+    width: 600px;
+    height: 380px;
+    background: transparent;
+    filter: saturate(100%);
+}
+
+#slider3:target ~ .imgContainer #img3 p {
+    display: block;
+    font-size: 1.1rem;
+    transition: all 0.7s ease;
+}
+#slider3:target ~ .imgContainer #button3 p {
+    display: block;
+    font-size: 1.1rem;
+    transition: all 0.7s ease;
+}
+#slider3:target ~ .imgContainer #img3 .cordas {
+    width: 25%;
+}
+#slider3:target ~ .imgContainer #button3 .cordas {
+    width: 25%;
+    transition: all 0.7s ease;
+}
+
+#slider4:target ~ .imgContainer #img4{
+    width: 600px;
+    height: 380px;
+    background: transparent;
+    filter: saturate(100%);
+}
+#slider4:target ~ .imgContainer #button4 {
+    width: 600px;
+    height: 380px;
+    background: transparent;
+    filter: saturate(100%);
+}
+
+#slider4:target ~ .imgContainer #img4 p {
+    display: block;
+    font-size: 1.1rem;
+    transition: all 0.7s ease;
+}
+#slider4:target ~ .imgContainer #button4 p {
+    display: block;
+    font-size: 1.1rem;
+    transition: all 0.7s ease;
+}
+#slider4:target ~ .imgContainer #img4 .cordas {
+    width: 25%;
+}
+#slider4:target ~ .imgContainer #button4 .cordas {
+    width: 25%;
+    transition: all 0.7s ease;
+}
+
+
+#slider5:target ~ .imgContainer #img5{
+    width: 600px;
+    height: 380px;
+    background: transparent;
+    filter: saturate(100%);
+}
+#slider5:target ~ .imgContainer #button5 {
+    width: 600px;
+    height: 380px;
+    background: transparent;
+    filter: saturate(100%);
+}
+
+#slider5:target ~ .imgContainer #img5 p {
+    display: block;
+    font-size: 1.1rem;
+    transition: all 0.7s ease;
+}
+#slider5:target ~ .imgContainer #button5 p {
+    display: block;
+    font-size: 1.1rem;
+    transition: all 0.7s ease;
+}
+#slider5:target ~ .imgContainer #img5 .cordas {
+    width: 25%;
+}
+#slider5:target ~ .imgContainer #button5 .cordas {
+    width: 25%;
+    transition: all 0.7s ease;
+}
+
+#slider6:target ~ .imgContainer #img6{
+    width: 600px;
+    height: 380px;
+    background: transparent;
+    filter: saturate(100%);
+}
+#slider6:target ~ .imgContainer #button6 {
+    width: 600px;
+    height: 380px;
+    background: transparent;
+    filter: saturate(100%);
+}
+
+#slider6:target ~ .imgContainer #img6 p {
+    display: block;
+    font-size: 1.1rem;
+    transition: all 0.7s ease;
+}
+#slider6:target ~ .imgContainer #button6 p {
+    display: block;
+    font-size: 1.1rem;
+    transition: all 0.7s ease;
+}
+#slider6:target ~ .imgContainer #img6 .cordas {
+    width: 25%;
+}
+#slider6:target ~ .imgContainer #button6 .cordas {
+    width: 25%;
+    transition: all 0.7s ease;
+}
+
+#slider7:target ~ .imgContainer #img7{
+    width: 600px;
+    height: 380px;
+    background: transparent;
+    filter: saturate(100%);
+}
+#slider7:target ~ .imgContainer #button7 {
+    width: 600px;
+    height: 380px;
+    background: transparent;
+    filter: saturate(100%);
+}
+
+#slider7:target ~ .imgContainer #img7 p {
+    display: block;
+    font-size: 1.1rem;
+    transition: all 0.7s ease;
+}
+#slider7:target ~ .imgContainer #button7 p {
+    display: block;
+    font-size: 1.1rem;
+    transition: all 0.7s ease;
+}
+#slider7:target ~ .imgContainer #img7 .cordas {
+    width: 25%;
+}
+#slider7:target ~ .imgContainer #button7 .cordas {
+    width: 25%;
+    transition: all 0.7s ease;
+}
+
+#slider8:target ~ .imgContainer #img8{
+    width: 600px;
+    height: 380px;
+    background: transparent;
+    filter: saturate(100%);
+}
+#slider8:target ~ .imgContainer #button8 {
+    width: 600px;
+    height: 380px;
+    background: transparent;
+    filter: saturate(100%);
+}
+
+#slider8:target ~ .imgContainer #img8 p {
+    display: block;
+    font-size: 1.1rem;
+    transition: all 0.7s ease;
+}
+#slider8:target ~ .imgContainer #button8 p {
+    display: block;
+    font-size: 1.1rem;
+    transition: all 0.7s ease;
+}
+#slider8:target ~ .imgContainer #img8 .cordas {
+    width: 25%;
+}
+#slider8:target ~ .imgContainer #button8 .cordas {
+    width: 25%;
+    transition: all 0.7s ease;
+}
+
+#slider9:target ~ .imgContainer #img9{
+    width: 600px;
+    height: 380px;
+    background: transparent;
+    filter: saturate(100%);
+}
+#slider9:target ~ .imgContainer #button9 {
+    width: 600px;
+    height: 380px;
+    background: transparent;
+    filter: saturate(100%);
+}
+
+#slider9:target ~ .imgContainer #img9 p {
+    display: block;
+    font-size: 1.1rem;
+    transition: all 0.7s ease;
+}
+#slider9:target ~ .imgContainer #button9 p {
+    display: block;
+    font-size: 1.1rem;
+    transition: all 0.7s ease;
+}
+#slider9:target ~ .imgContainer #img9 .cordas {
+    width: 25%;
+}
+#slider9:target ~ .imgContainer #button9 .cordas {
+    width: 25%;
+    transition: all 0.7s ease;
+}
+
+#slider10:target ~ .imgContainer #img10{
+    width: 600px;
+    height: 380px;
+    background: transparent;
+    filter: saturate(100%);
+}
+#slider10:target ~ .imgContainer #button10 {
+    width: 600px;
+    height: 380px;
+    background: transparent;
+    filter: saturate(100%);
+}
+
+#slider10:target ~ .imgContainer #img10 p {
+    display: block;
+    font-size: 1.1rem;
+    transition: all 0.7s ease;
+}
+#slider10:target ~ .imgContainer #button10 p {
+    display: block;
+    font-size: 1.1rem;
+    transition: all 0.7s ease;
+}
+#slider10:target ~ .imgContainer #img10 .cordas {
+    width: 25%;
+}
+#slider10:target ~ .imgContainer #button10 .cordas {
+    width: 25%;
+    transition: all 0.7s ease;
+}
+
+#slider1:target ~ .imgContainer {
+    left: 90%;
+}
+#slider2:target ~ .imgContainer {
+    left: 70%;
+}
+#slider3:target ~ .imgContainer {
+    left: 50%;
+}
+#slider4:target ~ .imgContainer {
+    left: 30%;
+}
+#slider5:target ~ .imgContainer {
+    left: 10%;
+}
+#slider6:target ~ .imgContainer {
+    left: -10%;
+}
+#slider7:target ~ .imgContainer {
+    left: -30%;
+}
+#slider8:target ~ .imgContainer {
+    left: -50%;
+}
+#slider9:target ~ .imgContainer {
+    left: -70%;
+}
+#slider10:target ~ .imgContainer {
+    left: -90%;
+}
+.logo img {
+    height: 100px; 
+    width: auto; 
+    margin-left: 30px;
+}
+
+.menu-btn {
+    display: none;
+}
+@media (max-width:991px){
+    .home {
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    html {
+        font-size: 85%;
+    }
+    header {
+        padding: 1.5rem 2rem;
+    }
+}
+@media (max-width:1176px) {
+    .home {
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .menu-btn {
+        display: inline-block;
+    }
+    .menu-btn ul li {
+        font-size: 3rem;
+    }
+    header nav ul li {
+        display: none;
+    }
+    .heading {
+        margin-top: 13rem;
+    }
+}
+@media (max-width:425px) {
+    .container {
+        display: block;
+    }
+    .imgContainer {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 25%;
+    }
+    .imgContainer .img {
+        height:370px;
+        width: 300px;
+    }
+    .imgContainer .img:hover {
+        filter: saturate(100%);
+    }
+    .button {
+        height:370px;
+        width: 300px;
+    }
+    .cordas {
+        height: 370px;
+        width: 40%;
+    }
+    .img p {
+        font-size: 0.95rem;
+    }
+    .container a {
+        display: none;
+    }
+
+}
+@media (max-width:375px) {
+    .container {
+        display: block;
+    }
+    .imgContainer {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 25%;
+    }
+    .imgContainer .img {
+        height:370px;
+        width: 300px;
+    }
+    .imgContainer .img:hover {
+        filter: saturate(100%);
+    }
+    .button {
+        height:370px;
+        width: 300px;
+    }
+    .cordas {
+        height: 370px;
+        width: 35%;
+    }
+    .img p {
+        font-size: 0.95rem;
+    }
+    .container a {
+        display: none;
+    }
+
+}
+@media (max-width:375px) {
+    .container {
+        display: block;
+    }
+    .imgContainer {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 25%;
+    }
+    .imgContainer .img {
+        height:370px;
+        width: 300px;
+    }
+    .imgContainer .img:hover {
+        filter: saturate(100%);
+    }
+    .button {
+        height:370px;
+        width: 300px;
+    }
+    .cordas {
+        height: 370px;
+        width: 35%;
+    }
+    .img p {
+        font-size: 0.9rem;
+    }
+    .container a {
+        display: none;
+    }
+
+}

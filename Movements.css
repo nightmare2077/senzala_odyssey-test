@@ -1,6 +1,6 @@
 body {
-    height: auto;
-    background: url(https://phonoteka.org/uploads/posts/2022-02/1643931089_6-phonoteka-org-p-oboi-na-rabochii-stol-serii-fon-6.jpg);
+    height: 100vh;
+    background: url(https://img.freepik.com/free-vector/modern-black-luxury-background-with-hexagon-pattern_87202-1055.jpg?w=826&t=st=1688228535~exp=1688229135~hmac=84aa134d791df910ea49456c9c14c85ab2f1a8f1c395cff026b2e17565f4db14);
     background-repeat: no-repeat;
     background-size: cover;
 	background-position: center center;
@@ -101,58 +101,33 @@ nav ul li:hover > ul { display: block; }
     text-shadow: -1px -1px 0 rgb(240, 183, 27), 1px -1px 0 rgb(240, 183, 27), -1px 1px 0 rgb(240, 183, 27), 1px 1px 0 rgb(240, 183, 27);
     text-transform: uppercase;
 }
-
-.media {
+.list {
+    width: 90%;
+}
+.list .btn{
+    background-color: var(--main-color);
+    max-width: 40rem;
+    border-radius: 0.7rem;
+    box-shadow: 0 0 0.3rem rgb(206, 205, 205);
     display: flex;
-    margin-right: 3rem;
-    margin-left: 3rem;
-}
-.box {
-    display: grid;
     align-items: center;
-    margin-right: 3rem;
-    margin-left: 3rem;
-    margin-bottom: 3rem;
-}
-.box h3 {
-    color: #cfae81;
-    font-size: 3rem;
-    font-weight: 400;
-    text-align: center;
-}
-.content {
-    background: #cfae81;
-    height: 8rem;
-}
-.content h3 {
-    color: var(--bg);
-    font-size: 3rem;
-    text-align: center;
-}
-.box img {
-    width: 20rem;
-    height: 25rem;
-}
-
-.box .btn {
-    background-color: darkred;
-    display: block;
-    width: auto;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    justify-content: space-around;
+    padding: 1.5rem 1.5rem;
+    margin-left: 22rem;
+    margin-right: -3rem;
+    margin-bottom: 2rem;
+    clear: both;
     color: #eee;
-    font-size: 1.7rem;
-    text-decoration: none;
-    text-align: center;
-    transition: color 0.3s linear;
-    margin-top: 0.6rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
 }
-.box .btn:hover {
+.list .btn:hover {
 color: goldenrod;
 background-color: rgb(71, 1, 1);
 }
-
+.list h2 {
+    color: #eee;
+    font-size: 2rem;
+    font-weight: 400;
+}
 .footer {
     background: var(--bg);
     text-align: center;
@@ -235,3 +210,44 @@ background-color: rgb(71, 1, 1);
     }
 
 }
+@media (max-width:768px) {
+    .heading {
+        margin-top: 13rem;
+    }
+    .list {
+        width: 80%;
+    }
+    .list .btn{
+        max-width: 30rem;
+        margin-left: 13rem;
+    }
+    .footer .links {
+        display: none;
+    }
+}
+@media (max-width:425px) {
+    .heading {
+        margin-top: 13rem;
+    }
+    .list {
+        width: 80%;
+    }
+    .list .btn{
+        max-width: 30rem;
+        margin-left: 3rem;
+    }
+    .footer .links {
+        display: none;
+    }
+}
+@media (max-width:375px) {
+    .list .btn {
+        margin-left: 2.5rem;
+    }
+}
+@media (max-width:320px) {
+    .list .btn {
+        margin-left: 2rem;
+    }
+}
+

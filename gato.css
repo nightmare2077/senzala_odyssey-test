@@ -1,9 +1,9 @@
 body {
     height: auto;
-    background: url(https://phonoteka.org/uploads/posts/2022-02/1643931089_6-phonoteka-org-p-oboi-na-rabochii-stol-serii-fon-6.jpg);
+    background: var(--bg);
     background-repeat: no-repeat;
     background-size: cover;
-	background-position: center center;
+	background-position: left;
 	background-attachment: fixed;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -52,7 +52,9 @@ header {
     border-bottom: var(--border);
     z-index: 1000;
 }
-
+header nav {
+    margin-right: 3rem;
+}
 header nav ul li {
     position: relative;
     float: left;
@@ -88,6 +90,20 @@ nav ul li ul li:hover {
 }
 nav ul li:hover > ul { display: block; }
 
+.logo img {
+    height: 100px; 
+    width: auto; 
+    margin-left: 30px;
+}
+
+.menu-btn {
+    display: none;
+}
+.menu-btn img {
+    height: 45px; 
+    width: auto;
+}
+
 .heading {
     text-align: center;
     color: #fff;
@@ -102,55 +118,81 @@ nav ul li:hover > ul { display: block; }
     text-transform: uppercase;
 }
 
-.media {
-    display: flex;
-    margin-right: 3rem;
-    margin-left: 3rem;
-}
-.box {
-    display: grid;
+.basic .row {
+    display: block;  
     align-items: center;
-    margin-right: 3rem;
-    margin-left: 3rem;
-    margin-bottom: 3rem;
+    background: var(--black);
+    margin: 4rem;
+    margin-top: 13rem;
 }
-.box h3 {
-    color: #cfae81;
-    font-size: 3rem;
-    font-weight: 400;
-    text-align: center;
-}
-.content {
-    background: #cfae81;
-    height: 8rem;
-}
-.content h3 {
-    color: var(--bg);
-    font-size: 3rem;
-    text-align: center;
-}
-.box img {
-    width: 20rem;
-    height: 25rem;
+.basic .row .content {
+    width: 80%;
+    text-align: left;
+    height: auto;
+    color: #fff;
+    top: 0;
+    background: var(--black);
+    margin-left: 4rem;
 }
 
-.box .btn {
-    background-color: darkred;
+.basic .row .content h3 {
+    font-size: 2.7rem;
+    color: #cfae81;
+    font-weight: 500;
+}
+.basic .row .content h2 {
+    font-size: 2.2rem;
+    color: #cfae81;
+    font-weight: 500;
+}
+.basic .row .content p {
+    font-size: 1.2rem;
+    color: #ccc;
+    padding: 1rem 0;
+    line-height: 1.8;
+    font-weight: 200;
+}
+.basic .row img {
+    height: auto; 
+    max-width: 350px;
+}
+
+.row .btn {
+    background-color: #be9965;
+    ;
     display: block;
-    width: auto;
+    width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     color: #eee;
-    font-size: 1.7rem;
+    font-size: 2rem;
     text-decoration: none;
     text-align: center;
-    transition: color 0.3s linear;
-    margin-top: 0.6rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
 }
-.box .btn:hover {
-color: goldenrod;
-background-color: rgb(71, 1, 1);
+.row .btn:hover {
+    background-color: #916a34;
+}
+.media {
+    display: flex;
+    margin-left: 4rem;
+}
+.media img{
+    margin-left: 4rem;
+    margin-right: 4rem;
+    border-radius: 10px;
+}
+.media iframe {
+    border-radius: 10px;
+}
+
+.content b {
+    color: #be9965;
+}
+
+
+.heading {
+    color: var(--main-color);
+    text-shadow: -1px -1px 0 rgb(240, 183, 27), 1px -1px 0 rgb(240, 183, 27), -1px 1px 0 rgb(240, 183, 27), 1px 1px 0 rgb(240, 183, 27);
+    text-transform: uppercase;
 }
 
 .footer {
@@ -161,12 +203,14 @@ background-color: rgb(71, 1, 1);
     margin-right: 2rem;
 }
 .footer .share a {
-    height: 5rem;
-    width: 5rem;
     line-height: 5rem;
     font-size: 2rem;
     color: #fff;
     margin: 0.3rem;
+}
+.footer .share a img {
+    height: 35px;
+    width: auto;
 }
 .footer .links {
     margin-bottom: 1.5rem;
@@ -192,17 +236,6 @@ background-color: rgb(71, 1, 1);
 .footer .credit span {
     color: #cfae81;
 }
-
-.logo img {
-    height: 100px; 
-    width: auto; 
-    margin-left: 30px;
-}
-
-.menu-btn {
-    display: none;
-}
-
 @media (max-width:991px){
     .home {
         background-position: left;
@@ -233,5 +266,51 @@ background-color: rgb(71, 1, 1);
     header nav ul li {
         display: none;
     }
-
+}
+@media (max-width:425px) {
+    .basic .row {
+        width: fit-content;
+        margin-left: -3rem;
+    }
+    .basic .row .content {
+        width: auto;
+        text-align: justify;
+        margin-left: 6rem;
+        margin-right: 4rem;
+    }
+    .basic .row .content p {
+        font-size: 3rem;
+    }
+    .basic .row .content h3 {
+        font-size: 5rem;
+    }
+    .menu-btn img {
+        height: 7rem;
+    }
+    .logo img {
+        height: 120px;
+    }
+    .basic .row .media {
+        margin-left: 6rem;
+        margin-right: 4rem;
+    }
+    .footer .links {
+        display: none;
+    }
+    .footer {
+       width: 260%;
+    }
+    .footer .share a img {
+        height: 5rem;
+    }
+}
+@media (max-width:375px) {
+    .footer {
+       width: 300%;
+    }
+}
+@media (max-width:320px) {
+    .footer {
+       width: 350%;
+    }
 }

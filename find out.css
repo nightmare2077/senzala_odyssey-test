@@ -1,6 +1,6 @@
 body {
+    background: var(--bg);
     height: auto;
-    background: url(https://phonoteka.org/uploads/posts/2022-02/1643931089_6-phonoteka-org-p-oboi-na-rabochii-stol-serii-fon-6.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 	background-position: center center;
@@ -88,13 +88,63 @@ nav ul li ul li:hover {
 }
 nav ul li:hover > ul { display: block; }
 
+.menu-btn {
+    display: none;
+}
+
+
+.home {
+    align-items: center;
+    background: url(https://img.freepik.com/free-vector/modern-black-luxury-background-with-hexagon-pattern_87202-1055.jpg?w=826&t=st=1688228535~exp=1688229135~hmac=84aa134d791df910ea49456c9c14c85ab2f1a8f1c395cff026b2e17565f4db14);
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+    margin-top: 8rem;
+}
+.home .find {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.home .find h3 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: white;
+}
+.content_2 {
+    display: flex;
+    margin-top: 2rem;
+}
+.content_2 p {
+    color: #fff;
+    font-size: 1.5rem;
+    height: auto;
+    font-weight: 400;
+    margin-right: 15rem;
+    margin-bottom: 3rem;
+}
+
+.home .btn {
+    background-color: darkred;
+    display: block;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #eee;
+    font-size: 2rem;
+    text-decoration: none;
+    text-align: center;
+    transition: color 0.3s linear;
+}
+.home .btn:hover {
+    color: goldenrod;
+    background-color: rgb(71, 1, 1);
+}
 .heading {
     text-align: center;
     color: #fff;
     text-transform: uppercase;
     padding-bottom: 3.5rem;
     font-size: 4rem;
-    margin-top: 10rem;
 }
 .heading span {
     color: var(--main-color);
@@ -102,56 +152,6 @@ nav ul li:hover > ul { display: block; }
     text-transform: uppercase;
 }
 
-.media {
-    display: flex;
-    margin-right: 3rem;
-    margin-left: 3rem;
-}
-.box {
-    display: grid;
-    align-items: center;
-    margin-right: 3rem;
-    margin-left: 3rem;
-    margin-bottom: 3rem;
-}
-.box h3 {
-    color: #cfae81;
-    font-size: 3rem;
-    font-weight: 400;
-    text-align: center;
-}
-.content {
-    background: #cfae81;
-    height: 8rem;
-}
-.content h3 {
-    color: var(--bg);
-    font-size: 3rem;
-    text-align: center;
-}
-.box img {
-    width: 20rem;
-    height: 25rem;
-}
-
-.box .btn {
-    background-color: darkred;
-    display: block;
-    width: auto;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    color: #eee;
-    font-size: 1.7rem;
-    text-decoration: none;
-    text-align: center;
-    transition: color 0.3s linear;
-    margin-top: 0.6rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
-}
-.box .btn:hover {
-color: goldenrod;
-background-color: rgb(71, 1, 1);
-}
 
 .footer {
     background: var(--bg);
@@ -192,17 +192,6 @@ background-color: rgb(71, 1, 1);
 .footer .credit span {
     color: #cfae81;
 }
-
-.logo img {
-    height: 100px; 
-    width: auto; 
-    margin-left: 30px;
-}
-
-.menu-btn {
-    display: none;
-}
-
 @media (max-width:991px){
     .home {
         background-position: left;
@@ -219,9 +208,13 @@ background-color: rgb(71, 1, 1);
 }
 @media (max-width:1176px) {
     .home {
-        background-position: left;
+        background-size: cover;
+        background-position: center center;
         justify-content: center;
         text-align: center;
+    }
+    header {
+        padding: 1.5rem 2rem;
     }
 
     .menu-btn {
@@ -233,5 +226,33 @@ background-color: rgb(71, 1, 1);
     header nav ul li {
         display: none;
     }
-
+    .home .find {
+        margin-top: 11rem;
+        text-align: left;
+        margin-bottom: 3rem;
+    }
+}
+@media (max-width:425px) {
+    .home .find h3{
+        font-size: 4rem;
+    }
+    .content_2 p {
+        margin-right: 2rem;
+        font-size: 1.5rem;
+    }
+    .footer .links {
+        display: none;
+    }
+}
+@media (max-width:320px) {
+    .home .find h3{
+        font-size: 3rem;
+    }
+    .content_2 p {
+        margin-right: 1.5rem;
+        font-size: 1.2rem;
+    }
+    .footer .links {
+        display: none;
+    }
 }

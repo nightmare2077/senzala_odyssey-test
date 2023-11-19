@@ -1,11 +1,12 @@
 body {
     height: auto;
-    background: url(https://phonoteka.org/uploads/posts/2022-02/1643931089_6-phonoteka-org-p-oboi-na-rabochii-stol-serii-fon-6.jpg);
+    background: var(--bg);
     background-repeat: no-repeat;
     background-size: cover;
-	background-position: center center;
+	background-position: left;
 	background-attachment: fixed;
     font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
 }
 * {
     margin: 0;
@@ -88,6 +89,13 @@ nav ul li ul li:hover {
 }
 nav ul li:hover > ul { display: block; }
 
+
+#section {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    width: 100vh;
+}
 .heading {
     text-align: center;
     color: #fff;
@@ -102,60 +110,45 @@ nav ul li:hover > ul { display: block; }
     text-transform: uppercase;
 }
 
-.media {
-    display: flex;
-    margin-right: 3rem;
-    margin-left: 3rem;
+.book-list {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: table-column;
+    margin-bottom: 3rem;
+    background: var(--black);
 }
-.box {
-    display: grid;
-    align-items: center;
-    margin-right: 3rem;
-    margin-left: 3rem;
+.book {
+    display: flex;
     margin-bottom: 3rem;
 }
-.box h3 {
-    color: #cfae81;
-    font-size: 3rem;
-    font-weight: 400;
-    text-align: center;
+.book img {
+    width: 40%;
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
 }
 .content {
-    background: #cfae81;
-    height: 8rem;
+    color: #ccc;
+    margin-top: 1.5rem;
+    margin-right: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    margin-left: 2rem;
 }
-.content h3 {
-    color: var(--bg);
-    font-size: 3rem;
-    text-align: center;
+.content h2 {
+    font-size: 2rem;
+    color: #cfae81;
 }
-.box img {
-    width: 20rem;
-    height: 25rem;
-}
-
-.box .btn {
-    background-color: darkred;
-    display: block;
-    width: auto;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    color: #eee;
-    font-size: 1.7rem;
-    text-decoration: none;
-    text-align: center;
-    transition: color 0.3s linear;
-    margin-top: 0.6rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
-}
-.box .btn:hover {
-color: goldenrod;
-background-color: rgb(71, 1, 1);
+.content p {
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .footer {
     background: var(--bg);
     text-align: center;
+    width: 100%;
 }
 .footer .share a{
     margin-right: 2rem;
@@ -192,17 +185,13 @@ background-color: rgb(71, 1, 1);
 .footer .credit span {
     color: #cfae81;
 }
-
-.logo img {
-    height: 100px; 
-    width: auto; 
-    margin-left: 30px;
+#docs {
+    display: grid;
+    place-items: center;
 }
-
 .menu-btn {
     display: none;
 }
-
 @media (max-width:991px){
     .home {
         background-position: left;
@@ -235,3 +224,35 @@ background-color: rgb(71, 1, 1);
     }
 
 }
+@media (max-width:768px) {
+    .heading {
+        margin-top: 13rem;
+    }
+    #docs {
+        background: none;
+    }
+}
+@media screen and (max-width: 425px) {
+
+    header nav ul li a {
+        padding: 5px;
+        margin-right: 3rem;
+    }
+    header nav ul li {
+        margin-left: 2rem;
+    }
+    .heading {
+        margin-top: 12rem;
+    }
+    .book img {
+        width: 80%;
+    }
+    #docs {
+        background: none;
+    }
+    .footer .links {
+        display: none;
+    }
+
+}
+
