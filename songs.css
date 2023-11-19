@@ -1,0 +1,303 @@
+body {
+    height: auto;
+    background: url(https://img.freepik.com/free-vector/modern-black-luxury-background-with-hexagon-pattern_87202-1055.jpg?w=826&t=st=1688228535~exp=1688229135~hmac=84aa134d791df910ea49456c9c14c85ab2f1a8f1c395cff026b2e17565f4db14);
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+    font-family: 'Times New Roman', Times, serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --main-color: darkred;
+    --black: rgb(53, 52, 52);
+    --bg: #272727;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+}
+
+html {
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+    width: 0.8rem;
+}
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 5rem;
+}
+
+header {
+    position: fixed;
+    justify-content: space-between;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    padding: 10px;
+    background: var(--bg);
+    border-bottom: var(--border);
+    z-index: 1000;
+}
+
+header nav ul li {
+    position: relative;
+    float: left;
+}
+header .logo img {
+    height: 100px; 
+    width: auto; 
+    margin-left: 30px;
+}
+header nav ul li a {
+    padding: 15px;
+    color: white;
+    font-weight: 200;
+    font-size: 1.3rem;
+    margin-left: 45px;
+    transition: color 0.3s linear;
+    border-bottom: 0.1rem solid var(--main-color);
+}
+header nav ul li a:hover {
+    color: goldenrod;
+}
+nav ul li ul {
+    position: absolute;
+    left: 40px;
+    width: 180px;
+    color: white;
+    background-color: darkred;
+    display: none;
+}
+nav ul li ul li {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: block;
+}
+nav ul li ul li:hover {
+    background-color: rgb(49, 3, 3);
+    color: darkred;
+}
+nav ul li ul li a {
+    margin-left: 0;
+}
+nav ul li:hover > ul { display: block; }
+
+.heading {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+    margin-top: 10rem;
+}
+.heading span {
+    color: var(--main-color);
+    text-shadow: -1px -1px 0 rgb(240, 183, 27), 1px -1px 0 rgb(240, 183, 27), -1px 1px 0 rgb(240, 183, 27), 1px 1px 0 rgb(240, 183, 27);
+    text-transform: uppercase;
+}
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+    align-items: flex-start;
+    padding: 5px 5%;
+    margin-bottom: 1.5rem;
+}
+.container .main-video {
+    background: var(--bg);
+    border-radius: 5px;
+    padding: 10px;
+}
+.container .main-video iframe {
+    height: 20rem;
+    width: 100%;
+    border-radius: 5px;
+}
+.container .main-video .title {
+    color: #fff;
+    font-size: 2rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.container p {
+    font-size: 1.45rem;
+    font-weight: 400;
+    color: #fff;
+    text-align: left;
+    margin-left: 2rem;
+}
+.container .video-list {
+    background: var(--bg);
+    border-radius: 5px;
+    height: 520px;
+    overflow-y: scroll;
+}
+.container .text {
+    display: flex;
+}
+.container .video-list p {
+    display: none;
+}
+.container .video-list::-webkit-scrollbar {
+    width: 7px;
+}
+.container .video-list::-webkit-scrollbar-track {
+    background: var(--black);
+    border-radius: 50px;
+}
+.container .video-list::-webkit-scrollbar-thumb {
+    background: darkred;
+    border-radius: 50px;
+}
+.container .video-list .vid iframe {
+    width: 100px;
+    border-radius: 5px;
+}
+.container .video-list .vid {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.container .video-list .vid:hover {
+    background: #eee;
+}
+.container .video-list .vid.active {
+    background: rgb(156, 28, 28);
+}
+.container .video-list .vid.active .title {
+    color: #fff;
+}
+.container .video-list .vid .title {
+    color: #fff;
+    font-size: 17px;
+}
+.text-2 {
+    margin-left: 12rem;
+}
+.footer {
+    background: var(--bg);
+    text-align: center;
+    width: 100%;
+}
+.footer .share a{
+    margin-right: 2rem;
+}
+.footer .share a {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    margin: 0.3rem;
+}
+.footer .links {
+    margin-bottom: 1.5rem;
+}
+.footer .links a {
+    margin-right: 0.5rem;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    border: var(--border);
+    padding: 0.5rem 1rem;
+    transition: color 0.3s linear;
+}
+.footer .links a:hover {
+    color: goldenrod;
+    background-color: rgb(71, 1, 1);
+}
+.footer .credit {
+    font-size: 1rem;
+    color: #fff;
+}
+.footer .credit span {
+    color: #cfae81;
+}
+.menu-btn {
+    display: none;
+}
+
+@media (max-width:991px){
+    .home {
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    html {
+        font-size: 85%;
+    }
+    header {
+        padding: 1.5rem 2rem;
+    }
+}
+@media (max-width:1176px) {
+    .home {
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .menu-btn {
+        display: inline-block;
+    }
+    .menu-btn ul li {
+        font-size: 3rem;
+    }
+    header nav ul li {
+        display: none;
+    }
+}
+@media (max-width:768px) {
+    .heading {
+        margin-top: 13rem;
+    }
+    .container {
+        display: block;
+    }
+    .main-video {
+        margin-bottom: 3rem;
+    }
+}
+@media (max-width:425px) {
+    .text-2 {
+        margin-left: 5rem;
+    }
+    .heading {
+        font-size: 3.2rem;
+    }
+}
+@media (max-width:375px) {
+    .container .text {
+        display: block;
+        text-align: justify;
+    }
+    .text-2 {
+        margin-left: 0;
+        margin-top: 2.5rem;
+
+    }
+}
+
