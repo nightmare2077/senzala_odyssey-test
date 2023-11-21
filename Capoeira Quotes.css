@@ -529,7 +529,7 @@ header .navbar ul li a:hover {
     }
     .home .content {
         margin-top: 10rem;
-        margin-left: 4rem;
+        margin-left: 3rem;
         margin-right: 5rem;
         margin-bottom: 2rem;
 
@@ -542,7 +542,7 @@ header .navbar ul li a:hover {
         font-size: 1.5rem;
     }
     .heading {
-        margin-left: 3rem;
+        margin-left: 0rem;
     }
     .basic .row {
         margin-left: 2.5rem;
@@ -596,7 +596,7 @@ header .navbar ul li a:hover {
         margin-left: 3rem;
     }
     .heading {
-        margin-left: 5rem;
+        margin-left: 3rem;
         font-size: 3.8rem;
     }
     .basic .row {
@@ -700,6 +700,10 @@ header .navbar ul li a:hover {
         position: absolute;
         margin-left: 60%;
         width: 70%;
+    }
+    .heading {
+        font-size: 3.5rem;
+        margin-left: 6.5rem;
     }
 }
 
