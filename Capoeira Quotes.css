@@ -529,8 +529,8 @@ header .navbar ul li a:hover {
     }
     .home .content {
         margin-top: 10rem;
-        margin-left: 3rem;
-        margin-right: 4rem;
+        margin-left: 4rem;
+        margin-right: 5rem;
         margin-bottom: 2rem;
 
     }
@@ -545,7 +545,7 @@ header .navbar ul li a:hover {
         margin-left: 3rem;
     }
     .basic .row {
-        margin-left: 3rem;
+        margin-left: 2.5rem;
         width: fit-content;
         
     }
@@ -555,32 +555,16 @@ header .navbar ul li a:hover {
         width: fit-content;
     }
     .basic .row .content p {
-        font-size: 1.8rem;
+        font-size: 1.3rem;
     }
-    .handbook .hand {
-        margin-left: 3rem;
-        width: fit-content;
+    .basic .row .content h3 {
+        font-size: 2rem;
     }
-    .handbook .hand .content{
-        margin: 1.5rem;
-        text-align: justify;
-        width: fit-content;
+    .basic .row .btn {
+        font-size: 1.3rem;
     }
-    .handbook .hand .content p {
-        font-size: 1.8rem;
-    }
-
-    .archi .arc {
-        margin-left: 3rem;
-        width: fit-content; 
-    }
-    .archi .arc .content {
-        margin: 1.5rem;
-        text-align: justify;
-        width: fit-content;
-    }
-    .archi .arc .content p {
-        font-size: 1.8rem;
+    .basic .row img {
+        width: 30rem;
     }
     .contact .cont {
         background: var(--bg);
@@ -599,18 +583,28 @@ header .navbar ul li a:hover {
     .footer .links {
         display: none;
     }
+
+    .contact .cont form h3 {
+        font-size: 2.2rem;
+    }
+    .contact .cont form p {
+        font-size: 1.3rem;
+    }
 }
 @media (max-width:375px) {
+    .home .content {
+        margin-left: 3rem;
+    }
     .heading {
         margin-left: 5rem;
         font-size: 3.8rem;
     }
     .basic .row {
-        margin-left: 5rem;
-        width: fit-content;     
+        margin-left: 2.8rem;
+        width: 94%;     
     }
     .basic .row img {
-        width: 305px;
+        width: 500px;
     }
     .basic .row .content {
         margin: 1.5rem;
@@ -656,16 +650,21 @@ header .navbar ul li a:hover {
     }
     .contact .cont .map {
         height: 600px;
-        width: 60%;
+        width: 50%;
         object-fit: cover;
         margin-right: 80%;
     }
     .contact .cont form {
-        flex: 1 1 45rem;
-        padding: 5rem 2rem;
-        text-align: center;
+        text-align: left;
         position: absolute;
-        margin-left: 65%;
+        margin-left: 50%;
+        width: 60%;
+    }
+    .contact .cont form h3 {
+        font-size: 2rem;
+    }
+    .contact .cont form p {
+        font-size: 1.2rem;
     }
     .footer {
         margin-top: 3rem;
@@ -673,6 +672,37 @@ header .navbar ul li a:hover {
         margin-left: 5rem;
     }
 }
+@media (max-width:320px) {
+    .basic .row {
+        margin-left: 0.5rem;
+        width: fit-content;   
+        margin-left: 3rem;  
+    }
+    .basic .row img {
+        width: fit-content;
+    }
+    .basic .row .content {
+        margin: 1.5rem;
+        text-align: justify;
+        width: fit-content;
+    }
+    .basic .row .content p {
+        font-size: 1.8rem;
+    }
+    .contact .cont .map {
+        height: 600px;
+        width: 60%;
+        object-fit: cover;
+        margin-right: 80%;
+    }
+    .contact .cont form {
+        text-align: left;
+        position: absolute;
+        margin-left: 60%;
+        width: 70%;
+    }
+}
+
 
 
 
