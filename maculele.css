@@ -251,21 +251,28 @@ nav ul li:hover > ul { display: block; }
 }
 
 @media (max-width:425px) {
+    .heading {
+        margin-top: 13rem;
+    }
     .basic {
-        margin-top: 14rem;
+        width: 100%;
+        display: block;
+        margin-left: 0rem;
+        margin-top: 2rem;
+    }
+    .row iframe {
+        height: 150px;
+        width: 350px;
+        margin-top: 1rem;
     }
     .basic .row {
-        margin-left: 3.5rem;
+        margin-left: 3rem;
         width: fit-content;
+        margin-top: -3rem;
         
     }
-    .basic .row .content {
-        margin: 1.5rem;
-        text-align: justify;
-        width: fit-content;
-    }
-    .basic .row .content p {
-        font-size: 1.8rem;
+    .basic .row h3 {
+        font-size: 2.3rem;
     }
     .footer {
         margin-top: 3rem;
@@ -276,57 +283,67 @@ nav ul li:hover > ul { display: block; }
     }
 }
 @media (max-width:375px) {
+    .heading {
+        margin-top: 13rem;
+    }
     .basic {
-        margin-top: 14rem;
+        width: 100%;
+        display: block;
+        margin-left: 0rem;
+        margin-top: 2rem;
+    }
+    .row iframe {
+        height: 150px;
+        width: 350px;
+        margin-top: 1rem;
     }
     .basic .row {
-        margin-left: 4.5rem;
-        width: fit-content;     
-    }
-    .basic .row img {
-        width: 305px;
-    }
-    .basic .row .content {
-        margin: 1.5rem;
-        text-align: justify;
+        margin-left: 1rem;
         width: fit-content;
+        margin-top: -3rem;
+        
     }
-    .basic .row .content p {
-        font-size: 1.8rem;
+    .basic .row h3 {
+        font-size: 2.3rem;
     }
     .footer {
         margin-top: 3rem;
         margin-bottom: 2rem;
-        margin-left: 1rem;
+    }
+    .footer .links {
+        display: none;
     }
 }
 @media (max-width:320px) {
-    .basic .row img {
-        width: 255px;
+    .heading {
+        margin-top: 13rem;
+        font-size: 3.6rem;
     }
     .basic {
-        margin-top: 14rem;
+        width: 100%;
+        display: block;
+        margin-left: 0rem;
+        margin-top: 2rem;
+    }
+    .row iframe {
+        height: 130px;
+        width: 290px;
+        margin-top: 1rem;
     }
     .basic .row {
-        margin-left: 4.5rem;
-        width: fit-content;     
-    }
-    .basic .row img {
-        width: 305px;
-    }
-    .basic .row .content {
-        margin: 1.5rem;
-        text-align: justify;
+        margin-left: 1rem;
         width: fit-content;
+        margin-top: -3rem;
+        
     }
-    .basic .row .content p {
-        font-size: 1.8rem;
+    .basic .row h3 {
+        font-size: 2.3rem;
     }
     .footer {
         margin-top: 3rem;
         margin-bottom: 2rem;
-        margin-left: 0.5rem;
     }
-
-
+    .footer .links {
+        display: none;
+    }
 }
