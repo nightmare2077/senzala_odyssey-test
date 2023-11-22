@@ -128,7 +128,7 @@ nav ul li:hover > ul { display: block; }
     border-radius: 5px;
 }
 .container .main-video .title {
-    color: #ссс;
+    color: #ccc;
     font-size: 2rem;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -137,7 +137,7 @@ nav ul li:hover > ul { display: block; }
 .container p {
     font-size: 1.45rem;
     font-weight: 400;
-    color: #ссс;
+    color: #ccc;
     text-align: left;
     margin-left: 2rem;
 }
