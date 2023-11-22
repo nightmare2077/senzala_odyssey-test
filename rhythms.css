@@ -258,7 +258,7 @@ nav ul li:hover > ul { display: block; }
 }
 @media (max-width:425px) {
     #docs {
-        background: none;
+        background: var(--black);
     }
     .book {
         display: grid;
