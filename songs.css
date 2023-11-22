@@ -280,6 +280,9 @@ nav ul li:hover > ul { display: block; }
     .main-video {
         margin-bottom: 3rem;
     }
+    .footer .links {
+	display:none;
+    }
 }
 @media (max-width:425px) {
     .text-2 {
