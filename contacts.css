@@ -302,6 +302,9 @@ nav ul li:hover > ul { display: block; }
     .contact .cont {
         background: var(--bg);
     }
+    .heading {
+	margin-top: 13rem;
+    }
 
     .contact .cont .map {
         height: 600px;
