@@ -572,7 +572,7 @@ header .navbar ul li a:hover {
 
     .contact .cont .map {
         height: 600px;
-        width: 50%;
+        width: 40%;
         object-fit: cover;
         margin-right: 50%;
     }
@@ -585,10 +585,10 @@ header .navbar ul li a:hover {
     }
 
     .contact .cont form h3 {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
     }
     .contact .cont form p {
-        font-size: 1.3rem;
+        font-size: 1.15rem;
     }
 }
 @media (max-width:375px) {
@@ -706,6 +706,8 @@ header .navbar ul li a:hover {
         margin-left: 6.5rem;
     }
 }
+
+
 
 
 
