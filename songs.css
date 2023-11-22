@@ -213,6 +213,7 @@ nav ul li:hover > ul { display: block; }
 }
 .footer .links {
     margin-bottom: 1.5rem;
+    display:none;
 }
 .footer .links a {
     margin-right: 0.5rem;
