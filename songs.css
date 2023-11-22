@@ -128,7 +128,7 @@ nav ul li:hover > ul { display: block; }
     border-radius: 5px;
 }
 .container .main-video .title {
-    color: #fff;
+    color: #ссс;
     font-size: 2rem;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -137,7 +137,7 @@ nav ul li:hover > ul { display: block; }
 .container p {
     font-size: 1.45rem;
     font-weight: 400;
-    color: #fff;
+    color: #ссс;
     text-align: left;
     margin-left: 2rem;
 }
@@ -286,8 +286,14 @@ nav ul li:hover > ul { display: block; }
     }
 }
 @media (max-width:425px) {
+    .container .text {
+        display: block;
+        text-align: justify;
+    }
     .text-2 {
-        margin-left: 5rem;
+        margin-left: 0;
+        margin-top: 2.5rem;
+
     }
     .heading {
         font-size: 3.2rem;
