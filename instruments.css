@@ -285,6 +285,9 @@ nav ul li:hover > ul { display: block; }
         width: fit-content;
     }
     .basic .row .content p {
+        font-size: 1.3rem;
+    }
+    .basic .row .content h3 {
         font-size: 1.8rem;
     }
     .footer {
@@ -316,6 +319,9 @@ nav ul li:hover > ul { display: block; }
         width: fit-content;
     }
     .basic .row .content p {
+        font-size: 1.3rem;
+    }
+    .basic .row .content h3 {
         font-size: 1.8rem;
     }
     .footer {
@@ -355,6 +361,9 @@ nav ul li:hover > ul { display: block; }
         width: fit-content;
     }
     .basic .row .content p {
+        font-size: 1.3rem;
+    }
+    .basic .row .content h3 {
         font-size: 1.8rem;
     }
     .footer {
