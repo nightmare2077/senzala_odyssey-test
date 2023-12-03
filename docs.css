@@ -291,5 +291,12 @@ nav ul li:hover > ul { display: block; }
         justify-content: center;
         margin-left: 2rem;
     }
+    .footer .links {
+        display: none;
+    }
+    .btn {
+        width: 70%;
+    }
 
 }
+
