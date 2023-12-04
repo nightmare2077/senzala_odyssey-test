@@ -418,7 +418,7 @@ img {
 }
 @media (max-width:375px) {
     .heading {
-        margin-left: 4rem;
+        margin-left: 0rem;
         font-size: 3.5rem;
     }
     .info p {
