@@ -668,24 +668,28 @@ nav ul li:hover > ul { display: block; }
         position: absolute;
         left: 0;
         top: 25%;
+        margin-bottom: 2rem;
     }
     .imgContainer .img {
         height:370px;
-        width: 300px;
+        width: 320px;
     }
     .imgContainer .img:hover {
         filter: saturate(100%);
     }
     .button {
         height:370px;
-        width: 300px;
+        width: 320px;
     }
     .cordas {
         height: 370px;
-        width: 35%;
+        width: 46%;
     }
     .img p {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
+    }
+    .img h3 {
+        font-size: 1.2rem;
     }
     .container a {
         display: none;
