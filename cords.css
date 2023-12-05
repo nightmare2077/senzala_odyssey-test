@@ -602,6 +602,7 @@ nav ul li:hover > ul { display: block; }
         position: absolute;
         left: 0;
         top: 25%;
+	margin-bottom: 7rem;
     }
     .imgContainer .img {
         height:370px;
@@ -668,7 +669,6 @@ nav ul li:hover > ul { display: block; }
         position: absolute;
         left: 0;
         top: 25%;
-        margin-bottom: 2rem;
     }
     .imgContainer .img {
         height:370px;
