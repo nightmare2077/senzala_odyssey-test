@@ -122,7 +122,7 @@ nav ul li:hover > ul { display: block; }
     margin-top: 13rem;
 }
 .book {
-    display: flex;
+    display: block;
     margin-bottom: 7rem;
 }
 .book img {
@@ -141,24 +141,24 @@ nav ul li:hover > ul { display: block; }
     height: auto;
 }
 .content h2 {
-    font-size: 2.4rem;
+    font-size: 2rem;
     color: #cfae81;
 }
 .content p {
     margin-top: 0.7rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 .video {
-    display: table-column;
-    margin-left: 3rem;
+    display: flex;
     margin-right: 3rem;
     margin-top: 0.8rem;
 }
 .video iframe {
     margin-top: 1.2rem;
-    width: 400px;
+    width: 350px;
     height: 150px;
     border-radius: 10px;
+    margin-left: 3rem;
 }
 .footer {
     background: var(--bg);
@@ -258,7 +258,7 @@ nav ul li:hover > ul { display: block; }
 }
 @media (max-width:425px) {
     #docs {
-        background: var(--black);
+        background: none;
     }
     .book {
         display: grid;
