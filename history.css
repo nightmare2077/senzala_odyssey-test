@@ -1,152 +1,3 @@
-body {
-    height: auto;
-    background: var(--bg);
-    background-repeat: no-repeat;
-    background-size: cover;
-	background-position: left;
-	background-attachment: fixed;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 400;
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
-    list-style: none;
-    text-decoration: none;
-}
-
-:root {
-    --main-color: darkred;
-    --black: rgb(53, 52, 52);
-    --bg: #272727;
-    --border: 0.1rem solid rgba(255, 255, 255, 0.3);
-}
-
-html {
-    overflow-x: hidden;
-    scroll-padding-top: 9rem;
-    scroll-behavior: smooth;
-}
-html::-webkit-scrollbar {
-    width: 0.8rem;
-}
-html::-webkit-scrollbar-track {
-    background: transparent;
-}
-html::-webkit-scrollbar-thumb {
-    background: #fff;
-    border-radius: 5rem;
-}
-
-body {
-    height: auto;
-    background: var(--bg);
-    background-repeat: no-repeat;
-    background-size: cover;
-	background-position: left;
-	background-attachment: fixed;
-    font-family: 'Times New Roman', Times, serif;
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
-    list-style: none;
-    text-decoration: none;
-}
-
-:root {
-    --main-color: darkred;
-    --black: rgb(53, 52, 52);
-    --bg: #272727;
-    --border: 0.1rem solid rgba(255, 255, 255, 0.3);
-}
-
-html {
-    overflow-x: hidden;
-    scroll-padding-top: 9rem;
-    scroll-behavior: smooth;
-}
-html::-webkit-scrollbar {
-    width: 0.8rem;
-}
-html::-webkit-scrollbar-track {
-    background: transparent;
-}
-html::-webkit-scrollbar-thumb {
-    background: #fff;
-    border-radius: 5rem;
-}
-
-header {
-    position: fixed;
-    justify-content: space-between;
-    display: flex;
-    top: 0;
-    left: 0;
-    right: 0;
-    align-items: center;
-    padding: 10px;
-    background: var(--bg);
-    border-bottom: var(--border);
-    z-index: 1000;
-}
-header nav {
-    margin-right: 3rem;
-}
-header nav ul li {
-    position: relative;
-    float: left;
-}
-header nav ul li a {
-    padding: 15px;
-    color: white;
-    font-weight: 200;
-    font-size: 1.3rem;
-    margin-left: 45px;
-    transition: color 0.3s linear;
-    border-bottom: 0.1rem solid var(--main-color);
-}
-header nav ul li a:hover {
-    color: goldenrod;
-}
-nav ul li ul {
-    position: absolute;
-    left: 40px;
-    width: 180px;
-    color: white;
-    background-color: darkred;
-    display: none;
-}
-nav ul li ul li {
-    width: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    display: block;
-}
-nav ul li ul li:hover {
-    background-color: rgb(49, 3, 3);
-    color: darkred;
-}
-nav ul li:hover > ul { display: block; }
-
-.logo img {
-    height: 100px; 
-    width: auto; 
-    margin-left: 30px;
-}
-
-.menu-btn {
-    display: none;
-}
-.menu-btn img {
-    height: 45px; 
-    width: auto;
-}
-
-
 #section {
     display: grid;
     place-items: center;
@@ -202,6 +53,108 @@ nav ul li:hover > ul { display: block; }
     font-size: 1.3rem;
 }
 
+#docs {
+    display: grid;
+    place-items: center;
+    margin-top: 3rem;
+}
+
+
+
+
+
+body {
+    height: auto;
+    background: var(--bg);
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-position: left;
+	background-attachment: fixed;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --main-color: darkred;
+    --black: rgb(53, 52, 52);
+    --bg: #272727;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+}
+
+html {
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+    width: 0.8rem;
+}
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 5rem;
+}
+
+header {
+    position: fixed;
+    justify-content: space-between;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    padding: 10px;
+    background: var(--bg);
+    border-bottom: var(--border);
+    z-index: 1000;
+}
+
+header nav ul li {
+    position: relative;
+    float: left;
+}
+header nav ul li a {
+    padding: 15px;
+    color: white;
+    font-weight: 200;
+    font-size: 1.3rem;
+    margin-left: 45px;
+    transition: color 0.3s linear;
+    border-bottom: 0.1rem solid var(--main-color);
+}
+header nav ul li a:hover {
+    color: goldenrod;
+}
+nav ul li ul {
+    position: absolute;
+    left: 40px;
+    width: 180px;
+    color: white;
+    background-color: darkred;
+    display: none;
+}
+nav ul li ul li {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: block;
+}
+nav ul li ul li:hover {
+    background-color: rgb(49, 3, 3);
+    color: darkred;
+}
+nav ul li:hover > ul { display: block; }
+
+
 .footer {
     background: var(--bg);
     text-align: center;
@@ -242,9 +195,63 @@ nav ul li:hover > ul { display: block; }
 .footer .credit span {
     color: #cfae81;
 }
-#docs {
-    display: grid;
-    place-items: center;
+.menu-btn {
+    display: none;
+}
+h1 {
+    font-size: 120px;
+    text-align: center;
+    margin-top: 2rem;
+    color: rgba(22, 22, 22, 0.884);
+}
+.parallax-1 {
+    background: url(https://images.squarespace-cdn.com/content/v1/51cfa3a4e4b025acba7306f5/1374229675048-VPZUJQM6UWS6KM027EZV/escravos6.png?format=1000w);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.parallax-inner {
+    padding: 17% 0;
+}
+h2 {
+    font-size: 32px;
+    color: #ccc;
+    text-align: center;
+    letter-spacing: 2px;
+}
+p {
+    color: #ccc;
+    font-size: 1.3rem;
+    margin: 3rem;
+    text-align: justify;
+}
+.parallax-2 {
+    background: url(https://static.todamateria.com.br/upload/ca/po/capoeira-og.jpg);
+    filter: saturate(10%);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.parallax-3 {
+    background: url(https://capoeiraindia.in/wp-content/uploads/2017/07/capoeira-india-history-2.jpg);
+    filter: saturate(10%);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.parallax-4 {
+    background: url(https://images.squarespace-cdn.com/content/v1/63b5e748d16e9c409bbb0493/bfd2898e-51aa-45ba-a08f-06ea1499b219/senzala.jpeg);
+    filter: saturate(10%);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.parallax-5 {
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Rugendasroda.jpg/1200px-Rugendasroda.jpg);
+    filter: saturate(10%);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 .menu-btn {
     display: none;
@@ -277,29 +284,6 @@ nav ul li:hover > ul { display: block; }
         font-size: 3rem;
     }
     header nav ul li {
-        display: none;
-    }
-
-}
-@media (max-width:768px) {
-    .heading {
-        margin-top: 13rem;
-    }
-    #docs {
-        background: none;
-    }
-}
-@media screen and (max-width: 425px) {
-    .heading {
-        margin-top: 12rem;
-    }
-    .book img {
-        width: 80%;
-    }
-    #docs {
-        background: none;
-    }
-    .footer .links {
         display: none;
     }
 
