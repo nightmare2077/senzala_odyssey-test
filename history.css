@@ -1,3 +1,45 @@
+body {
+    height: auto;
+    background: var(--bg);
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-position: left;
+	background-attachment: fixed;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --main-color: darkred;
+    --black: rgb(53, 52, 52);
+    --bg: #272727;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+}
+
+html {
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+    width: 0.8rem;
+}
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 5rem;
+}
+
 #section {
     display: grid;
     place-items: center;
@@ -57,52 +99,6 @@
     display: grid;
     place-items: center;
     margin-top: 3rem;
-}
-
-
-
-
-
-body {
-    height: auto;
-    background: var(--bg);
-    background-repeat: no-repeat;
-    background-size: cover;
-	background-position: left;
-	background-attachment: fixed;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 400;
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
-    list-style: none;
-    text-decoration: none;
-}
-
-:root {
-    --main-color: darkred;
-    --black: rgb(53, 52, 52);
-    --bg: #272727;
-    --border: 0.1rem solid rgba(255, 255, 255, 0.3);
-}
-
-html {
-    overflow-x: hidden;
-    scroll-padding-top: 9rem;
-    scroll-behavior: smooth;
-}
-html::-webkit-scrollbar {
-    width: 0.8rem;
-}
-html::-webkit-scrollbar-track {
-    background: transparent;
-}
-html::-webkit-scrollbar-thumb {
-    background: #fff;
-    border-radius: 5rem;
 }
 
 header {
