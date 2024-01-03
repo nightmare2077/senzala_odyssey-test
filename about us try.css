@@ -1,0 +1,299 @@
+body {
+    height: auto;
+    background: var(--bg);
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-position: left;
+	background-attachment: fixed;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --main-color: darkred;
+    --black: rgb(53, 52, 52);
+    --bg: #272727;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+}
+
+html {
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+    width: 0.8rem;
+}
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 5rem;
+}
+
+header {
+    position: fixed;
+    justify-content: space-between;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    padding: 10px;
+    background: var(--bg);
+    border-bottom: var(--border);
+    z-index: 1000;
+}
+
+header nav ul li {
+    position: relative;
+    float: left;
+}
+header nav ul li a {
+    padding: 15px;
+    color: white;
+    font-weight: 200;
+    font-size: 1.3rem;
+    margin-left: 45px;
+    transition: color 0.3s linear;
+    border-bottom: 0.1rem solid var(--main-color);
+}
+header nav ul li a:hover {
+    color: goldenrod;
+}
+nav ul li ul {
+    position: absolute;
+    left: 40px;
+    width: 180px;
+    color: white;
+    background-color: darkred;
+    display: none;
+}
+nav ul li ul li {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: block;
+}
+nav ul li ul li:hover {
+    background-color: rgb(49, 3, 3);
+    color: darkred;
+}
+nav ul li:hover > ul { display: block; }
+
+
+.footer {
+    background: var(--bg);
+    text-align: center;
+    width: 100%;
+}
+.footer .share a{
+    margin-right: 2rem;
+}
+.footer .share a {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    margin: 0.3rem;
+}
+.footer .links {
+    margin-bottom: 1.5rem;
+}
+.footer .links a {
+    margin-right: 0.5rem;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    border: var(--border);
+    padding: 0.5rem 1rem;
+    transition: color 0.3s linear;
+}
+.footer .links a:hover {
+    color: goldenrod;
+    background-color: rgb(71, 1, 1);
+}
+.footer .credit {
+    font-size: 1rem;
+    color: #fff;
+}
+.footer .credit span {
+    color: #cfae81;
+}
+.menu-btn {
+    display: none;
+}
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(48, 40, 40, 0.3)rgba(65, 54, 54, 0.3)3);
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content h1 {
+    font-size: 160px;
+    color: rgba(240, 209, 142, 0.541);
+    font-weight: 600;
+    text-align: center;
+    margin-top: 5rem;
+}
+.content h4 {
+    font-size: 2.5rem;
+    color: rgba(209, 148, 78, 0.664);
+    font-weight: 600;
+    text-align: center;
+    margin-top: 3rem;
+}
+.back-video {
+    position: absolute;
+    right: 0;
+    bottom: -20%;
+    z-index: -1;
+    width: 100%;
+    filter: brightness(40%);
+    
+}
+
+.parallax-1 {
+    background: var(--black);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-top: 23rem;
+}
+.parallax-inner {
+    padding: 17% 0;
+}
+.parallax-2 {
+    background: url(https://i.ibb.co/FWcMnKz/seminar-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.parallax-3 {
+    background: url(https://capoeiraindia.in/wp-content/uploads/2017/07/capoeira-india-history-2.jpg);
+    filter: saturate(10%);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.parallax-4 {
+    background: url(https://images.squarespace-cdn.com/content/v1/63b5e748d16e9c409bbb0493/bfd2898e-51aa-45ba-a08f-06ea1499b219/senzala.jpeg);
+    filter: saturate(10%);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.parallax-5 {
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Rugendasroda.jpg/1200px-Rugendasroda.jpg);
+    filter: saturate(10%);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.menu-btn {
+    display: none;
+}
+.info {
+    margin-top: 10rem;
+    background-color: var(--bg);
+    text-align: justify;
+}
+.info p {
+    color: #ccc;
+    font-size: 1.3rem;
+    margin: 2rem;
+}
+
+#docs {
+    display: grid;
+    place-items: center;
+    margin-top: 13rem;
+}
+.book-list {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: table-column;
+    margin-bottom: 3rem;
+    background: var(--black);
+}
+.book {
+    display: flex;
+    margin-bottom: 3rem;
+}
+.book img {
+    width: 40%;
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+}
+.content {
+    color: #ccc;
+    margin-top: 1.5rem;
+    margin-right: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    margin-left: 2rem;
+}
+.content h2 {
+    font-size: 2rem;
+    color: #cfae81;
+}
+.content p {
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+}
+#section {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    width: 100vh;
+}
+
+
+@media (max-width:991px){
+    .home {
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    html {
+        font-size: 85%;
+    }
+    header {
+        padding: 1.5rem 2rem;
+    }
+}
+@media (max-width:1176px) {
+    .home {
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .menu-btn {
+        display: inline-block;
+    }
+    .menu-btn ul li {
+        font-size: 3rem;
+    }
+    header nav ul li {
+        display: none;
+    }
+
+}
