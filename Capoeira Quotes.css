@@ -381,12 +381,9 @@ header .navbar ul li a:hover {
 
 @media (max-width:425px) {
     .home .content_1 {
+        margin-top: 11rem;
         margin-left: 1rem;
-	margin-top: 11rem;
     }
-     body {
-	overflow-x: hidden;
-     }
     .home .content_1 h3 {
         font-size: 4rem;
     }
@@ -441,7 +438,7 @@ header .navbar ul li a:hover {
     }
 
     .contact .cont .map {
-        height: 700px;
+        height: 600px;
         width: 50%;
         object-fit: cover;
         margin-right: 50%;
