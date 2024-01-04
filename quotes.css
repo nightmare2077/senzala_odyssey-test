@@ -268,4 +268,9 @@ nav ul li:hover > ul { display: block; }
     .footer .links {
         display: none;
     }
+    .img-box img {
+        display: block;
+        height: 29.5rem;
+
+    }
 }
