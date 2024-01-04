@@ -1,6 +1,6 @@
 body {
     background: var(--bg);
-    height: 100vh;
+    height: auto;
     background-repeat: no-repeat;
     background-size: cover;
 	background-position: center center;
@@ -384,9 +384,6 @@ header .navbar ul li a:hover {
     .home .content_1 {
         margin-top: 11rem;
         margin-left: 1rem;
-    }
-    .home .content_1 h3 {
-        font-size: 4rem;
     }
     .book-list {
         display: block;
