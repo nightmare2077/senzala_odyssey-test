@@ -301,7 +301,8 @@ nav ul li:hover > ul { display: block; }
     .media img{
         margin-left: 0rem;
         margin-right: 0rem;
-        width: fit-content;
+        width: 350px;
+	height: auto;
     }
     .media iframe {
         height: auto;
