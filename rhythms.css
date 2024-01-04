@@ -139,6 +139,7 @@ nav ul li:hover > ul { display: block; }
     margin-left: 3rem;
     text-align: left;
     height: auto;
+    margin-bottom: 2rem;
 }
 .content h2 {
     font-size: 2rem;
@@ -203,12 +204,18 @@ nav ul li:hover > ul { display: block; }
 #docs {
     display: grid;
     place-items: center;
-    background: url(https://img.freepik.com/free-vector/modern-black-luxury-background-with-hexagon-pattern_87202-1055.jpg?w=826&t=st=1688228535~exp=1688229135~hmac=84aa134d791df910ea49456c9c14c85ab2f1a8f1c395cff026b2e17565f4db14);
+    background: var(--bg);
     height: auto;
     background-repeat: no-repeat;
     background-size: cover;
 	background-position: center center;
 	background-attachment: fixed;
+}
+.book {
+    background-color: var(--black);
+    margin-right: 0.5rem;
+    margin-top: 13rem;
+    margin-left: 0.5rem;
 }
 
 @media (max-width:991px){
@@ -263,7 +270,7 @@ nav ul li:hover > ul { display: block; }
     .book {
         background-color: var(--black);
         margin-right: 0.5rem;
-        margin-top: 13rem;
+        margin-top: 5rem;
         margin-left: 0.5rem;
     }
     .footer .links {
