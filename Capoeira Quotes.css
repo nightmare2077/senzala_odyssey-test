@@ -381,10 +381,13 @@ header .navbar ul li a:hover {
 
 @media (max-width:425px) {
     .home .content_1 {
-        margin-top: 11rem;
         margin-left: 1rem;
     }
+     body {
+	overflow-x: hidden;
+     }
     .home .content_1 h3 {
+	margin-top: 11rem;
         font-size: 4rem;
     }
     .book-list {
