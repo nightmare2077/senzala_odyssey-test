@@ -437,7 +437,7 @@ header .navbar ul li a:hover {
 
     .contact .cont .map {
         height: 600px;
-        width: 50%;
+        width: 40%;
         object-fit: cover;
         margin-right: 50%;
     }
