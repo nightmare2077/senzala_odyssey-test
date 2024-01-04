@@ -1,3 +1,87 @@
+#section {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    width: 100vh;
+}
+.heading {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+    margin-top: 10rem;
+}
+.heading span {
+    color: var(--main-color);
+    text-shadow: -1px -1px 0 rgb(240, 183, 27), 1px -1px 0 rgb(240, 183, 27), -1px 1px 0 rgb(240, 183, 27), 1px 1px 0 rgb(240, 183, 27);
+    text-transform: uppercase;
+}
+
+.book-list {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: flex;
+    margin-bottom: 3rem;
+    background: var(--black);
+}
+.book {
+    display: flex;
+    margin-bottom: 3rem;
+}
+.book img{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+}
+.book-list img {
+    width: 300px;
+    height: 420px;
+}
+.content {
+    text-align: justify;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.content h3 {
+    font-size: 2.5rem;
+    color: #cfae81;
+    font-weight: 300;
+    margin-top: 2rem;
+}
+.content p {
+    margin-top: 1.5rem;
+    font-size: 1.6rem;
+    color: #ccc;
+    font-weight: 300;
+    margin-top: 2rem;
+}
+.content .btn {
+    background-color: #be9965;
+    display: block;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #eee;
+    font-size: 1.6rem;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+#docs {
+    display: grid;
+    place-items: center;
+    margin-top: 0rem;
+}
+.all {
+    margin-top: 13rem;
+}
+
+
+
+
+
 body {
     height: auto;
     background: var(--bg);
@@ -6,6 +90,7 @@ body {
 	background-position: left;
 	background-attachment: fixed;
     font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
 }
 * {
     margin: 0;
@@ -52,9 +137,7 @@ header {
     border-bottom: var(--border);
     z-index: 1000;
 }
-header nav {
-    margin-right: 3rem;
-}
+
 header nav ul li {
     position: relative;
     float: left;
@@ -90,252 +173,11 @@ nav ul li ul li:hover {
 }
 nav ul li:hover > ul { display: block; }
 
-.logo img {
-    height: 100px; 
-    width: auto; 
-    margin-left: 30px;
-}
-
-.menu-btn {
-    display: none;
-}
-
-.heading {
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
-    padding-bottom: 3.5rem;
-    font-size: 4rem;
-    margin-top: 10rem;
-}
-.heading span {
-    color: var(--main-color);
-    text-shadow: -1px -1px 0 rgb(240, 183, 27), 1px -1px 0 rgb(240, 183, 27), -1px 1px 0 rgb(240, 183, 27), 1px 1px 0 rgb(240, 183, 27);
-    text-transform: uppercase;
-}
-
-.basic .row {
-    display: flex;  
-    align-items: center;
-    flex-wrap: wrap;
-    background: var(--black);
-    margin: 4rem;
-    margin-top: 13rem;
-}
-.basic .row .content {
-    width: 50%;
-    text-align: left;
-    height: auto;
-    color: #fff;
-    top: 0;
-    background: var(--black);
-    margin-left: 4rem;
-}
-
-.basic .row .content h3 {
-    font-size: 2.7rem;
-    color: #cfae81;
-    font-weight: 500;
-}
-.basic .row .content p {
-    font-size: 1.2rem;
-    color: #ccc;
-    padding: 1rem 0;
-    line-height: 1.8;
-    font-weight: 200;
-}
-.basic .row img {
-    height: auto; 
-    max-width: 350px;
-}
-.heading {
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
-    padding-bottom: 3.5rem;
-    font-size: 4rem;
-    margin-top: 10rem;
-}
-.heading span {
-    color: var(--main-color);
-    text-shadow: -1px -1px 0 rgb(240, 183, 27), 1px -1px 0 rgb(240, 183, 27), -1px 1px 0 rgb(240, 183, 27), 1px 1px 0 rgb(240, 183, 27);
-    text-transform: uppercase;
-}
-.row .btn {
-    background-color: #be9965;
-    ;
-    display: block;
-    width: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    color: #eee;
-    font-size: 1.7rem;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 10px;
-}
-.row .btn:hover {
-    background-color: #916a34;
-}
-
-
-
-.heading {
-    color: var(--main-color);
-    text-shadow: -1px -1px 0 rgb(240, 183, 27), 1px -1px 0 rgb(240, 183, 27), -1px 1px 0 rgb(240, 183, 27), 1px 1px 0 rgb(240, 183, 27);
-    text-transform: uppercase;
-}
-.handbook .hand {
-    display: flex;  
-    align-items: center;
-    flex-wrap: wrap;
-    background: var(--black);
-    margin-left: 4rem;
-    margin-right: 4rem;
-    margin-bottom: 4rem;
-}
-.handbook .hand img {
-    height: auto; 
-    width: 350px;
-}
-.handbook .hand .content {
-    width: 50%;
-    text-align: left;
-    height: auto;
-    color: #fff;
-    top: 0;
-    background: var(--black);
-    margin-left: 4rem;
-}
-
-.handbook .hand .content h3 {
-    font-size: 2.7rem;
-    color: #cfae81;
-    font-weight: 500;
-}
-.handbook .hand .content p {
-    font-size: 1.2rem;
-    color: #ccc;
-    padding: 1rem 0;
-    line-height: 1.8;
-    font-weight: 200;
-}
-.hand .btn {
-    background-color: #be9965;
-    ;
-    display: block;
-    width: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    color: #eee;
-    font-size: 1.7rem;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 10px;
-}
-.hand .btn:hover {
-    background-color: #916a34;
-}
-
-.handbook .hand {
-    display: flex;  
-    align-items: center;
-    flex-wrap: wrap;
-    background: var(--black);
-    margin-left: 4rem;
-    margin-right: 4rem;
-}
-.handbook .hand .content {
-    width: 50%;
-    text-align: left;
-    height: auto;
-    color: #fff;
-    top: 0;
-    background: var(--black);
-    margin-left: 4rem;
-}
-
-.handbook .hand .content h3 {
-    font-size: 2.7rem;
-    color: #cfae81;
-    font-weight: 500;
-}
-.handbook .hand .content p {
-    font-size: 1.2rem;
-    color: #ccc;
-    padding: 1rem 0;
-    line-height: 1.8;
-    font-weight: 200;
-}
-.hand .btn {
-    background-color: #be9965;
-    ;
-    display: block;
-    width: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    color: #eee;
-    font-size: 1.7rem;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 10px;
-}
-.hand .btn:hover {
-    background-color: #916a34;
-}
-
-
-.archi .arc {
-    display: flex;  
-    align-items: center;
-    flex-wrap: wrap;
-    background: var(--black);
-    margin-left: 4rem;
-    margin-right: 4rem;
-    margin-bottom: 4rem;
-}
-.archi .arc img {
-    height: auto;
-    width: 350px;
-}
-.archi .arc .content {
-    width: 50%;
-    text-align: left;
-    height: auto;
-    color: #fff;
-    top: 0;
-    background: var(--black);
-    margin-left: 4rem;
-}
-
-.archi .arc .content h3 {
-    font-size: 2.7rem;
-    color: #cfae81;
-    font-weight: 500;
-}
-.archi .arc .content p {
-    font-size: 1.2rem;
-    color: #ccc;
-    padding: 1rem 0;
-    line-height: 1.8;
-    font-weight: 200;
-}
-.arc .btn {
-    background-color: #be9965;
-    ;
-    display: block;
-    width: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    color: #eee;
-    font-size: 1.7rem;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 10px;
-}
-.arc .btn:hover {
-    background-color: #916a34;
-}
 
 .footer {
     background: var(--bg);
     text-align: center;
+    width: 100%;
 }
 .footer .share a{
     margin-right: 2rem;
@@ -372,6 +214,20 @@ nav ul li:hover > ul { display: block; }
 .footer .credit span {
     color: #cfae81;
 }
+.menu-btn {
+    display: none;
+}
+h1 {
+    font-size: 120px;
+    text-align: center;
+    margin-top: 2rem;
+    color: rgba(22, 22, 22, 0.884);
+}
+.menu-btn {
+    display: none;
+}
+
+
 @media (max-width:991px){
     .home {
         background-position: left;
@@ -404,219 +260,32 @@ nav ul li:hover > ul { display: block; }
     }
 
 }
-
 @media (max-width:425px) {
-    .home {
-        background-position: center;
-        justify-content: center;
-        text-align: center;
-        width: min-content;
+    .book-list {
+        display: block;
     }
-    .home .content {
-        margin-top: 10rem;
-        margin-left: 2.5rem;
-        margin-right: 4rem;
-        margin-bottom: 2rem;
-
-    }
-    .home .content h3 {
-        font-size: 2rem;
-        
-    }
-    .home .content p {
-        font-size: 0.4rem;
-    }
-    .basic {
-        margin-top: -10rem;
-    }
-    .heading {
-        margin-left: 2rem;
-    }
-    .basic .row {
-        margin-left: 2.5rem;
-        width: fit-content;
-        
-    }
-    .basic .row .content {
-        margin: 1.5rem;
-        text-align: justify;
-        width: fit-content;
-    }
-    .basic .row .content p {
-        font-size: 1.3rem;
-    }
-    .basic .row .content h3 {
-        font-size: 2rem;
-    }
-    .basic .row .btn {
-        font-size: 1.3rem;
-    }
-    .basic .row img {
-        width: 30rem;
-    }
-    .handbook .hand {
-        margin-left: 2.5rem;
-        width: fit-content;
-    }
-    .handbook .hand .content{
-        margin: 1.5rem;
-        text-align: justify;
-        width: fit-content;
-    }
-    .handbook .hand .content p {
-        font-size: 1.8rem;
-    }
-
-    .archi .arc {
-        margin-left: 2.5rem;
-        width: fit-content; 
-    }
-    .archi .arc .content {
-        margin: 1.5rem;
-        text-align: justify;
-        width: fit-content;
-    }
-    .archi .arc .content p {
-        font-size: 1.8rem;
-    }
-
-    .footer {
-        margin-top: 3rem;
-        margin-bottom: 2rem;
+    .book-list img {
+        width: 100%;
+        height: auto;
     }
     .footer .links {
         display: none;
     }
-}
-@media (max-width:375px) {
-    .heading {
-        margin-left: 1rem;
-        font-size: 3.8rem;
+    .content .btn {
+        margin-bottom: 2rem;
     }
-    .basic {
-        margin-top: 14rem;
+    .content h3 {
+        font-size: 1.9rem;
     }
-    .basic .row {
-        margin-left: 2.5rem;
-        width: fit-content;     
-    }
-    .basic .row img {
-        width: 305px;
-    }
-    .basic .row .content {
-        margin: 1.5rem;
-        text-align: justify;
-        width: fit-content;
-    }
-    .basic .row .content p {
+    .content p {
         font-size: 1.3rem;
     }
-    .handbook .hand img {
-        width: 305px;
-    }
-    .handbook .hand {
-        margin-left: 2.5rem;
-        width: fit-content;
-    }
-    .handbook .hand .content {
-        margin: 1.5rem;
-        text-align: justify;
-        width: fit-content;
-    }
-    .handbook .hand .content p {
-        font-size: 1.8rem;
-    }
-    .archi .arc img {
-        width: 305px;
-        height: auto;
-    }
-    .archi .arc {
-        margin-left: 2.5rem;
-        width: fit-content;
-    }
-    .archi .arc .content p {
-        font-size: 1.8rem;
-    }
-    .archi .arc .content {
-        margin: 1.5rem;
-        text-align: justify;
-        width: fit-content;
-    }
-    .footer {
-        margin-top: 3rem;
-        margin-bottom: 2rem;
-        margin-left: 1rem;
+    .content .btn {
+        font-size: 1.3rem;
     }
 }
 @media (max-width:320px) {
-    .basic .row img {
-        width: 255px;
+    h1 {
+        font-size: 60px;
     }
-    .handbook .hand img {
-        width: 255px;
-    }
-    .archi .arc img {
-        width: 255px;
-    }
-
-    .heading {
-        margin-left: 0.5rem;
-        font-size: 3rem;
-    }
-    .basic {
-        margin-top: 14rem;
-    }
-    .basic .row {
-        margin-left: 0.5rem;
-        width: fit-content;     
-    }
-    .basic .row img {
-        width: 305px;
-    }
-    .basic .row .content {
-        margin: 1.5rem;
-        text-align: justify;
-        width: fit-content;
-    }
-    .basic .row .content p {
-        font-size: 1.3rem;
-    }
-    .handbook .hand img {
-        width: 305px;
-    }
-    .handbook .hand {
-        margin-left: 0.5rem;
-        width: fit-content;
-    }
-    .handbook .hand .content {
-        margin: 1.5rem;
-        text-align: justify;
-        width: fit-content;
-    }
-    .handbook .hand .content p {
-        font-size: 1.8rem;
-    }
-    .archi .arc img {
-        width: 305px;
-        height: auto;
-    }
-    .archi .arc {
-        margin-left: 0.5rem;
-        width: fit-content;
-    }
-    .archi .arc .content p {
-        font-size: 1.8rem;
-    }
-    .archi .arc .content {
-        margin: 1.5rem;
-        text-align: justify;
-        width: fit-content;
-    }
-    .footer {
-        margin-top: 3rem;
-        margin-bottom: 2rem;
-        margin-left: 0.5rem;
-    }
-
-
 }
