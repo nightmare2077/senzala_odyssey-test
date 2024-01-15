@@ -377,6 +377,9 @@ header .navbar ul li a:hover {
     header nav ul li {
         display: none;
     }
+    body {
+	overflow-x: hidden;
+    }
 
 }
 
