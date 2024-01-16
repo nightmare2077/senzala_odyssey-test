@@ -6,7 +6,6 @@ body {
 	background-position: center center;
 	background-attachment: fixed;
     font-family: 'Times New Roman', Times, serif;
-	overflow-x: hidden;
 }
 * {
     margin: 0;
@@ -237,37 +236,33 @@ header .navbar ul li a:hover {
 
 
 .contact .cont {
-    display: flex;
+    display: block;
     align-items: center;
     background-color: var(--black);
-    flex-wrap: wrap;
-    gap: 20rem;
 }
 .contact .cont .map {
-    flex: 1 1 45rem;
-    height: 600px;
+    height: 450px;
     width: 100%;
-    object-fit: cover;
-    margin-right: 50%;
 }
-.contact .cont form {
-    flex: 1 1 45rem;
-    padding: 5rem 2rem;
+.contact  form {
+    width: 100%;
+    margin-bottom: 4rem;
+}
+.contact  form h3{
     text-align: center;
-    position: absolute;
-    margin-left: 50%;
-}
-.contact .cont form h3 {
     text-transform: uppercase;
     font-size: 2.8rem;
     color: #be9965;
     font-weight: 500;
 }
-.contact .cont form p {
+.contact form p {
+    text-align: justify;
     color: #ccc;
     font-size: 1.5rem;
     margin-top: 1rem;
     font-weight: 500;
+    margin-right: 2rem;
+    margin-left: 2rem;
 }
 .inputBox {
     display: flex;
@@ -377,9 +372,6 @@ header .navbar ul li a:hover {
     header nav ul li {
         display: none;
     }
-    body {
-	overflow-x: hidden;
-    }
 
 }
 
@@ -387,6 +379,9 @@ header .navbar ul li a:hover {
     .home .content_1 {
         margin-top: 11rem;
         margin-left: 1rem;
+    }
+    .home .content_1 h3 {
+        font-size: 4rem;
     }
     .book-list {
         display: block;
@@ -432,20 +427,6 @@ header .navbar ul li a:hover {
     }
     .footer .links{
         display: none;
-    }
-    .contact .cont {
-        background: var(--bg);
-        margin-bottom: 2rem;
-    }
-
-    .contact .cont .map {
-        height: 600px;
-        width: 40%;
-        object-fit: cover;
-        margin-right: 50%;
-    }
-    .contact .cont form p {
-        font-size: 1.2rem;
     }
 }
 
