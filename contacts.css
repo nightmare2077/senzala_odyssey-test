@@ -1,6 +1,6 @@
 body {
     height: auto;
-    background: url(https://img.freepik.com/free-vector/modern-black-luxury-background-with-hexagon-pattern_87202-1055.jpg?w=826&t=st=1688228535~exp=1688229135~hmac=84aa134d791df910ea49456c9c14c85ab2f1a8f1c395cff026b2e17565f4db14);
+    background: var(--bg);
     background-repeat: no-repeat;
     background-size: cover;
 	background-position: center center;
@@ -102,33 +102,35 @@ nav ul li:hover > ul { display: block; }
     text-transform: uppercase;
 }
 
-.contact .cont {
-    display: flex;
+.contact {
+    display: block;
     align-items: center;
-    background-color: var(--black);
-    flex-wrap: wrap;
-    gap: 20rem;
+    background-color: var(--bg);
 }
 .contact .cont .map {
-    flex: 1 1 45rem;
+    height: 450px;
     width: 100%;
-    object-fit: cover;
-    margin-right: 50%;
-    height: 600px;
 }
-    .contact .cont form {
-        flex: 1 1 45rem;
-        padding: 5rem 2rem;
-        text-align: center;
-        position: absolute;
-        margin-left: 50%;
-    }
-    .contact .cont form h3 {
-        text-transform: uppercase;
-        font-size: 2.8rem;
-        color: #fff;
-        font-weight: 500;
-    }
+.contact  form {
+    width: 100%;
+    margin-bottom: 4rem;
+}
+.contact  form h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    color: #be9965;
+    font-weight: 500;
+}
+.contact form p {
+    text-align: justify;
+    color: #ccc;
+    font-size: 1.5rem;
+    margin-top: -1rem;
+    font-weight: 500;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
     .inputBox {
         display: flex;
         align-items: center;
@@ -295,111 +297,21 @@ nav ul li:hover > ul { display: block; }
     header nav ul li {
         display: none;
     }
+    .heading {
+        margin-top: 13rem;
+    }
 
 }
-
 @media (max-width:425px) {
-    .contact .cont {
-        background: var(--bg);
-    }
-    .heading {
-	margin-top: 13rem;
-    }
-
-    .contact .cont .map {
-        height: 600px;
-        width: 40%;
-        object-fit: cover;
-        margin-right: 50%;
-    }
-    .footer {
-        margin-bottom: 0rem;
-    }
     .footer .links {
         display: none;
     }
-
-    .contact .cont form h3 {
-        font-size: 1.8rem;
-    }
-    .contact .cont form p {
-        font-size: 1.15rem;
-    }
-}
-@media (max-width:375px) {
     .heading {
-        font-size: 3.8rem;
-        margin-top: 13rem;
-        margin-left: 3rem;
-    }
-    .contact .cont {
-        background-color: var(--bg);
-        width: 110%;
-    }
-    .contact .cont .map {
-        height: 600px;
-        width: 50%;
-        object-fit: cover;
-        margin-right: 80%;
-    }
-    .contact .cont form {
-        text-align: left;
-        position: absolute;
-        margin-left: 54%;
-        width: 60%;
-    }
-    .contact .cont form h3 {
-        font-size: 2rem;
-    }
-    .contact .cont form p {
-        font-size: 1.2rem;
-    }
-    .footer {
-        margin-bottom: 0rem;
-        width: 110%;
+        font-size: 3.5rem;
     }
 }
 @media (max-width:320px) {
-    .contact .cont .map {
-        height: 600px;
-        width: 60%;
-        object-fit: cover;
-        margin-right: 80%;
-    }
-    .contact .cont form {
-        text-align: left;
-        position: absolute;
-        margin-left: 60%;
-        width: 70%;
-    }
     .heading {
         font-size: 3rem;
-        margin-left: 4rem;
-    }
-    .contact .cont {
-        background-color: var(--bg);
-        width: 115%;
-    }
-    .contact .cont .map {
-        height: 600px;
-        width: 50%;
-        object-fit: cover;
-        margin-right: 80%;
-    }
-    .contact .cont form {
-        text-align: left;
-        position: absolute;
-        margin-left: 54%;
-        width: 60%;
-    }
-    .contact .cont form h3 {
-        font-size: 2rem;
-    }
-    .contact .cont form p {
-        font-size: 1.2rem;
-    }
-    .footer {
-        margin-bottom: 0rem;
-        width: 115%;
     }
 }
