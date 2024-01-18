@@ -34,8 +34,8 @@
     margin-bottom: 2rem;
     border-radius: 10px;
 }
-.book-list img {
-    width: 350px;
+.book-list .image img {
+    width: 420px;
     height: 420px;
 }
 .content {
