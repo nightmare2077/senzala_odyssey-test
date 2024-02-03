@@ -7,6 +7,7 @@ body {
 	background-attachment: fixed;
     font-family: 'Times New Roman', Times, serif;
     margin-top: 10rem;
+    overflow: hidden;
 }
 * {
     margin: 0;
@@ -152,7 +153,7 @@ nav ul li:hover > ul { display: block; }
     flex-direction: row;
     align-items: center;
     overflow: hidden;
-    margin-top: 23rem;
+    margin-top: 13rem;
     position: static;
 }
 .imgContainer {
@@ -211,13 +212,13 @@ nav ul li:hover > ul { display: block; }
 }
 
 #slider1:target ~ .imgContainer #img1{
-    width: 600px;
+    width: 500px;
     height: 380px;
     background: transparent;
     filter: saturate(100%);
 }
 #slider1:target ~ .imgContainer #button1 {
-    width: 600px;
+    width: 500px;
     height: 380px;
     background: transparent;
     filter: saturate(100%);
@@ -241,13 +242,13 @@ nav ul li:hover > ul { display: block; }
 }
 
 #slider2:target ~ .imgContainer #img2{
-    width: 600px;
+    width: 500px;
     height: 380px;
     background: transparent;
     filter: saturate(100%);
 }
 #slider2:target ~ .imgContainer #button2 {
-    width: 600px;
+    width: 500px;
     height: 380px;
     background: transparent;
     filter: saturate(100%);
@@ -272,13 +273,13 @@ nav ul li:hover > ul { display: block; }
 }
 
 #slider3:target ~ .imgContainer #img3{
-    width: 600px;
+    width: 500px;
     height: 380px;
     background: transparent;
     filter: saturate(100%);
 }
 #slider3:target ~ .imgContainer #button3 {
-    width: 600px;
+    width: 500px;
     height: 380px;
     background: transparent;
     filter: saturate(100%);
@@ -303,13 +304,13 @@ nav ul li:hover > ul { display: block; }
 }
 
 #slider4:target ~ .imgContainer #img4{
-    width: 600px;
+    width: 500px;
     height: 380px;
     background: transparent;
     filter: saturate(100%);
 }
 #slider4:target ~ .imgContainer #button4 {
-    width: 600px;
+    width: 500px;
     height: 380px;
     background: transparent;
     filter: saturate(100%);
@@ -335,13 +336,13 @@ nav ul li:hover > ul { display: block; }
 
 
 #slider5:target ~ .imgContainer #img5{
-    width: 600px;
+    width: 500px;
     height: 380px;
     background: transparent;
     filter: saturate(100%);
 }
 #slider5:target ~ .imgContainer #button5 {
-    width: 600px;
+    width: 500px;
     height: 380px;
     background: transparent;
     filter: saturate(100%);
@@ -366,13 +367,13 @@ nav ul li:hover > ul { display: block; }
 }
 
 #slider6:target ~ .imgContainer #img6{
-    width: 600px;
+    width: 500px;
     height: 380px;
     background: transparent;
     filter: saturate(100%);
 }
 #slider6:target ~ .imgContainer #button6 {
-    width: 600px;
+    width: 500px;
     height: 380px;
     background: transparent;
     filter: saturate(100%);
@@ -397,13 +398,13 @@ nav ul li:hover > ul { display: block; }
 }
 
 #slider7:target ~ .imgContainer #img7{
-    width: 600px;
+    width: 500px;
     height: 380px;
     background: transparent;
     filter: saturate(100%);
 }
 #slider7:target ~ .imgContainer #button7 {
-    width: 600px;
+    width: 500px;
     height: 380px;
     background: transparent;
     filter: saturate(100%);
@@ -428,13 +429,13 @@ nav ul li:hover > ul { display: block; }
 }
 
 #slider8:target ~ .imgContainer #img8{
-    width: 600px;
+    width: 500px;
     height: 380px;
     background: transparent;
     filter: saturate(100%);
 }
 #slider8:target ~ .imgContainer #button8 {
-    width: 600px;
+    width: 500px;
     height: 380px;
     background: transparent;
     filter: saturate(100%);
@@ -459,13 +460,13 @@ nav ul li:hover > ul { display: block; }
 }
 
 #slider9:target ~ .imgContainer #img9{
-    width: 600px;
+    width: 500px;
     height: 380px;
     background: transparent;
     filter: saturate(100%);
 }
 #slider9:target ~ .imgContainer #button9 {
-    width: 600px;
+    width: 500px;
     height: 380px;
     background: transparent;
     filter: saturate(100%);
@@ -490,13 +491,13 @@ nav ul li:hover > ul { display: block; }
 }
 
 #slider10:target ~ .imgContainer #img10{
-    width: 600px;
+    width: 500px;
     height: 380px;
     background: transparent;
     filter: saturate(100%);
 }
 #slider10:target ~ .imgContainer #button10 {
-    width: 600px;
+    width: 500px;
     height: 380px;
     background: transparent;
     filter: saturate(100%);
@@ -593,6 +594,11 @@ nav ul li:hover > ul { display: block; }
         margin-top: 13rem;
     }
 }
+@media (max-width:996px) {
+    .container {
+        margin-top: 20rem;
+    }
+}
 @media (max-width:425px) {
     .container {
         display: block;
@@ -613,6 +619,9 @@ nav ul li:hover > ul { display: block; }
     .button {
         height:370px;
         width: 300px;
+    }
+    .hidden {
+        margin-left: 0.7rem;
     }
     .cordas {
         height: 370px;
