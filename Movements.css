@@ -103,6 +103,8 @@ nav ul li:hover > ul { display: block; }
 }
 .list {
     width: 90%;
+    display: grid;
+    grid-template-columns: 40rem 40rem;
 }
 .list .btn{
     background-color: var(--main-color);
@@ -113,9 +115,8 @@ nav ul li:hover > ul { display: block; }
     align-items: center;
     justify-content: space-around;
     padding: 1.5rem 1.5rem;
-    margin-left: 22rem;
-    margin-right: -3rem;
-    margin-bottom: 2rem;
+    margin-left: 5rem;
+    margin-bottom: 2.6rem;
     clear: both;
     color: #eee;
 }
@@ -131,6 +132,7 @@ background-color: rgb(71, 1, 1);
 .footer {
     background: var(--bg);
     text-align: center;
+    margin-top: 6rem;
 }
 .footer .share a{
     margin-right: 2rem;
@@ -213,13 +215,14 @@ background-color: rgb(71, 1, 1);
 @media (max-width:768px) {
     .heading {
         margin-top: 13rem;
+        font-size: 4rem;
     }
     .list {
-        width: 80%;
+        display: block;
     }
     .list .btn{
-        max-width: 30rem;
-        margin-left: 13rem;
+        max-width: 100%;
+        margin-left: 9rem;
     }
     .footer .links {
         display: none;
@@ -228,26 +231,30 @@ background-color: rgb(71, 1, 1);
 @media (max-width:425px) {
     .heading {
         margin-top: 13rem;
-    }
-    .list {
-        width: 80%;
+        font-size: 3.8rem;
     }
     .list .btn{
-        max-width: 30rem;
-        margin-left: 3rem;
+        width: 100%;
+        margin-left: 1.5rem;
+        font-size: 1.7rem;
     }
     .footer .links {
         display: none;
     }
 }
 @media (max-width:375px) {
-    .list .btn {
-        margin-left: 2.5rem;
+    .heading {
+        font-size: 3.6rem;
+    }
+    .list .btn{
+        margin-left: 1.5rem;
     }
 }
 @media (max-width:320px) {
-    .list .btn {
-        margin-left: 2rem;
+    .heading {
+        font-size: 3rem;
+    }
+    .list .btn{
+        margin-left: 1.5rem;
     }
 }
-
