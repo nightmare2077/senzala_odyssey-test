@@ -651,11 +651,15 @@ nav ul li:hover > ul { display: block; }
     .container {
         display: block;
     }
+    .heading {
+        font-size: 1.7rem;
+        margin-top: 13rem;
+    }
     .imgContainer {
         display: block;
         position: absolute;
         left: 0;
-        top: 25%;
+        top: 35%;
     }
     .imgContainer .img {
         height:370px;
@@ -684,11 +688,15 @@ nav ul li:hover > ul { display: block; }
     .container {
         display: block;
     }
+    .heading {
+        font-size: 1.7rem;
+        margin-top: 13rem;
+    }
     .imgContainer {
         display: block;
         position: absolute;
         left: 0;
-        top: 25%;
+        top: 35%;
     }
     .imgContainer .img {
         height:370px;
