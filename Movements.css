@@ -1,5 +1,5 @@
 body {
-    height: auto;
+    height: 100%;
     background: url(https://img.freepik.com/free-vector/modern-black-luxury-background-with-hexagon-pattern_87202-1055.jpg?w=826&t=st=1688228535~exp=1688229135~hmac=84aa134d791df910ea49456c9c14c85ab2f1a8f1c395cff026b2e17565f4db14);
     background-repeat: no-repeat;
     background-size: cover;
@@ -101,6 +101,9 @@ nav ul li:hover > ul { display: block; }
     text-shadow: -1px -1px 0 rgb(240, 183, 27), 1px -1px 0 rgb(240, 183, 27), -1px 1px 0 rgb(240, 183, 27), 1px 1px 0 rgb(240, 183, 27);
     text-transform: uppercase;
 }
+.basic {
+    margin-bottom: 4rem;
+}
 .list {
     width: 90%;
     display: grid;
@@ -132,7 +135,6 @@ background-color: rgb(71, 1, 1);
 .footer {
     background: var(--bg);
     text-align: center;
-    margin-top: 6rem;
 }
 .footer .share a{
     margin-right: 2rem;
