@@ -6,7 +6,7 @@ body {
 	background-position: center center;
 	background-attachment: fixed;
     font-family: 'Times New Roman', Times, serif;
-    overflow: hidden;
+        overflow: hidden;
 }
 * {
     margin: 0;
@@ -90,6 +90,7 @@ nav ul li ul li:hover {
 nav ul li:hover > ul { display: block; }
 
 .heading {
+    margin-top: 10rem;
     text-align: center;
     color: #cfae81;
     text-transform: uppercase;
