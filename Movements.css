@@ -102,7 +102,7 @@ nav ul li:hover > ul { display: block; }
     text-transform: uppercase;
 }
 .basic {
-    margin-bottom: 4rem;
+    margin-bottom: 7rem;
 }
 .list {
     width: 90%;
@@ -214,6 +214,22 @@ background-color: rgb(71, 1, 1);
     }
 
 }
+@media (max-width:1024px) {
+    .heading {
+        margin-top: 13rem;
+        font-size: 4rem;
+    }
+    .list {
+        display: block;
+    }
+    .list .btn{
+        max-width: 100%;
+        margin-left: 9rem;
+    }
+    .footer .links {
+        display: none;
+    }
+}
 @media (max-width:768px) {
     .heading {
         margin-top: 13rem;
@@ -260,3 +276,4 @@ background-color: rgb(71, 1, 1);
         margin-left: 1.5rem;
     }
 }
+
