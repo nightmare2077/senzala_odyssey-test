@@ -52,26 +52,24 @@ header {
     border-bottom: var(--border);
     z-index: 1000;
 }
-header .navbar {
-    margin-right: 3rem;
-}
-header .navbar ul li {
+
+header nav ul li {
     position: relative;
     float: left;
 }
-header .navbar ul li a {
+header nav ul li a {
     padding: 15px;
     color: white;
     font-weight: 200;
     font-size: 1.3rem;
-    margin-left: 60px;
+    margin-left: 45px;
     transition: color 0.3s linear;
     border-bottom: 0.1rem solid var(--main-color);
 }
-header .navbar ul li a:hover {
+header nav ul li a:hover {
     color: goldenrod;
 }
-.navbar ul li ul {
+nav ul li ul {
     position: absolute;
     left: 40px;
     width: 180px;
@@ -79,16 +77,16 @@ header .navbar ul li a:hover {
     background-color: darkred;
     display: none;
 }
-.navbar ul li ul li {
+nav ul li ul li {
     width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     display: block;
 }
-.navbar ul li ul li:hover {
+nav ul li ul li:hover {
     background-color: rgb(49, 3, 3);
     color: darkred;
 }
-.navbar ul li:hover > ul { display: block; }
+nav ul li:hover > ul { display: block; }
 
 .menu-btn {
     display: none;
@@ -429,6 +427,7 @@ header .navbar ul li a:hover {
         display: none;
     }
 }
+
 
 
 
