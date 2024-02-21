@@ -580,6 +580,14 @@ nav ul li:hover > ul { display: block; }
         padding: 1.5rem 2rem;
     }
 }
+@media (max-width:1240px) {
+    .menu-btn {
+        display: inline-block;
+    }
+    .menu-btn ul li {
+        font-size: 3rem;
+    }
+}
 @media (max-width:1176px) {
     .home {
         background-position: left;
