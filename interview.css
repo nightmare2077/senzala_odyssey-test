@@ -176,6 +176,18 @@ nav ul li:hover > ul { display: block; }
         padding: 10px;
     }
 }
+@media (max-width:1240px) {
+    .menu-btn {
+        display: inline-block;
+        margin-right: 8rem;
+    }
+    .menu-btn ul li {
+        font-size: 3rem;
+    }
+     header nav ul li {
+        display: none;
+    }
+}
 @media (max-width:768px) {
     .container {
         grid-template-columns: 1fr;
