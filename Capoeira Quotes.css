@@ -357,6 +357,7 @@ nav ul li:hover > ul { display: block; }
 @media (max-width:1240px) {
     .menu-btn {
         display: inline-block;
+        margin-right: 4rem;
     }
     .menu-btn ul li {
         font-size: 3rem;
