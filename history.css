@@ -301,6 +301,10 @@ p {
 
 }
 @media (max-width:425px) {
+	    .menu-btn {
+        display: inline-block;
+        margin-right: 1.5rem;
+    }
     h1 {
         font-size: 60px;
     }
