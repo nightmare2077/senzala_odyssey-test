@@ -361,6 +361,9 @@ nav ul li:hover > ul { display: block; }
     .menu-btn ul li {
         font-size: 3rem;
     }
+     header nav ul li {
+        display: none;
+    }
 }
 @media (max-width:1176px) {
     .home {
