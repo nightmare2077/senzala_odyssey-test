@@ -274,6 +274,10 @@ h1 {
 
 }
 @media (max-width:425px) {
+	    .menu-btn {
+        display: inline-block;
+        margin-right: 1.5rem;
+    }
     .book-list {
         display: block;
     }
