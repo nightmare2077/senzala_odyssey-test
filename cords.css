@@ -187,6 +187,12 @@ nav ul li:hover > ul { display: block; }
     border-radius: 20px;
     display: flex;
 }
+.cordas_1 {
+    width: 50%;
+    height: 370px;
+    border-radius: 20px;
+    filter: brightness(40%);
+}
 .cordas {
     width: 50%;
     height: 370px;
@@ -240,10 +246,11 @@ nav ul li:hover > ul { display: block; }
     font-size: 1.1rem;
     transition: all 0.7s ease;
 }
-#slider1:target ~ .imgContainer #img1 .cordas {
+#slider1:target ~ .imgContainer #img1 .cordas_1 {
     width: 25%;
+    filter: brightness(100%);
 }
-#slider1:target ~ .imgContainer #button1 .cordas {
+#slider1:target ~ .imgContainer #button1 .cordas_1 {
     width: 25%;
 }
 
@@ -583,13 +590,9 @@ nav ul li:hover > ul { display: block; }
 @media (max-width:1240px) {
     .menu-btn {
         display: inline-block;
-        margin-right: 8rem;
     }
     .menu-btn ul li {
         font-size: 3rem;
-    }
-     header nav ul li {
-        display: none;
     }
 }
 @media (max-width:1176px) {
@@ -618,12 +621,8 @@ nav ul li:hover > ul { display: block; }
     }
 }
 @media (max-width:425px) {
-	    .menu-btn {
-        display: inline-block;
-        margin-right: 1.5rem;
-    }
     .heading {
-        font-size: 2rem;
+        font-size: 2.3rem;
         margin-top: 13rem;
     }
     .container {
@@ -642,6 +641,9 @@ nav ul li:hover > ul { display: block; }
     .imgContainer .img:hover {
         filter: saturate(100%);
     }
+    .imgContainer .img .cordas_1:hover {
+        filter: brightness(100%);
+    }
     .button {
         height:370px;
         width: 300px;
@@ -650,6 +652,10 @@ nav ul li:hover > ul { display: block; }
         margin-left: 0.7rem;
     }
     .cordas {
+        height: 370px;
+        width: 40%;
+    }
+    .cordas_1 {
         height: 370px;
         width: 40%;
     }
@@ -669,7 +675,7 @@ nav ul li:hover > ul { display: block; }
         display: block;
     }
     .heading {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         margin-top: 13rem;
     }
     .imgContainer {
@@ -706,7 +712,7 @@ nav ul li:hover > ul { display: block; }
         display: block;
     }
     .heading {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         margin-top: 13rem;
     }
     .imgContainer {
