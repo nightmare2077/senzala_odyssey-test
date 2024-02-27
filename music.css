@@ -266,7 +266,7 @@ nav ul li:hover > ul { display: block; }
         margin-right: -3rem;
     }
 }
-@media (max-width:1240px) {
+@media (max-width:1270px) {
     .menu-btn {
         display: inline-block;
         margin-right: 8rem;
