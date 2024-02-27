@@ -270,7 +270,7 @@ p {
         padding: 1.5rem 2rem;
     }
 }
-@media (max-width:1240px) {
+@media (max-width:1270px) {
     .menu-btn {
         display: inline-block;
         margin-right: 8rem;
